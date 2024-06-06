@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="commit test">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FilterFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MeteoriteAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MeteoriteAnalysis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Pipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Pipeline.java" afterDir="false" />
@@ -17,21 +18,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "JinhoyBoy"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JinhoyBoy&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/JinhoyBoy/MeteoriteProject.git",
-    "accountId": "381f12b1-3696-4ffd-acae-0d449539acd2"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JinhoyBoy/MeteoriteProject.git&quot;,
+    &quot;accountId&quot;: &quot;381f12b1-3696-4ffd-acae-0d449539acd2&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -48,6 +56,7 @@
   "keyToString": {
     "Application.MeteoriteAnalysis.executor": "Run",
     "JUnit.PipelineIntegrationTest.executor": "Run",
+    "JUnit.RegionFilterTest.executor": "Run",
     "Maven.MeteoriteProject [compile].executor": "Run",
     "Maven.MeteoriteProject [exec:java...].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -91,7 +100,7 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.MeteoriteAnalysis">
+  <component name="RunManager" selected="JUnit.RegionFilterTest">
     <configuration name="MeteoriteAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.MeteoriteAnalysis" />
       <module name="MeteoriteProject" />
@@ -125,9 +134,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegionFilterTest" />
         <item itemvalue="Application.MeteoriteAnalysis" />
         <item itemvalue="JUnit.PipelineIntegrationTest" />
-        <item itemvalue="JUnit.RegionFilterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -147,6 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717666666258</updated>
+      <workItem from="1717685766197" duration="5604000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />

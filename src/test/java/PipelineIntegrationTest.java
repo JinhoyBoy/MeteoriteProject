@@ -1,3 +1,5 @@
+import org.example.Filter;
+import org.example.FilterFactory;
 import org.example.Meteorite;
 import org.example.Pipeline;
 import static org.junit.jupiter.api.Assertions.*;
@@ -14,12 +16,14 @@ public class PipelineIntegrationTest {
     @Test
     public void testPipeline() {
         // Arrange
+        String configFilePath = "test_resources/test_config.json";
         String inputFilePath = "test_resources/test_input.json";
         String outputFilePath = "test_resources/test_output.json";
         String expectedOutputFilePath = "test_resources/expected_output.json";
 
         // Act
-        Pipeline pipeline = new Pipeline();
+        List<Filter> filters = FilterFactory.createFiltersFromConfigAndConsoleInput(configFilePath);
+        Pipeline pipeline = new Pipeline(filters);
         pipeline.process(inputFilePath, outputFilePath);
 
         // Assert
