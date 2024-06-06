@@ -22,8 +22,11 @@ public class RegionFilter implements Filter {
     }
 
     private boolean isWithinRadius(Meteorite meteorite) {
-        double lat = Double.parseDouble(meteorite.getReclat());
-        double lon = Double.parseDouble(meteorite.getReclong());
+        if (meteorite.getReclat() == 0.0 || meteorite.getReclong() == 0.0) {
+            return false;
+        }
+        double lat = meteorite.getReclat();
+        double lon = meteorite.getReclong();
         double distance = haversine(latitude, longitude, lat, lon);
         return distance <= radius;
     }

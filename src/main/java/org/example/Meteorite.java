@@ -5,62 +5,39 @@ public class Meteorite {
     private String id;
     private String nametype;
     private String recclass;
-    private double mass;
+    private Double mass;
     private String fall;
     private String year;
-    private String reclat;
-    private String reclong;
-    private GeoLocation geolocation;
+    private Double reclat;
+    private Double reclong;
+    private Geolocation geolocation;
+
+    public Meteorite(String name, double reclat, double reclong) {
+        this.name = name;
+        this.reclat = reclat;
+        this.reclong = reclong;
+    }
 
     // Getter und Setter Methoden
 
     public String getName() {
-        return name;
+        return name != null ? name : "Unknown";
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getId() {
-        return id;
+    public String getYear() {
+        return year;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setYear(String year) {
+        this.year = year;
     }
 
-    public String getNametype() {
-        return nametype;
-    }
+    // Weitere Getter und Setter Methoden für die anderen Felder
 
-    public void setNametype(String nametype) {
-        this.nametype = nametype;
-    }
-
-    public String getRecclass() {
-        return recclass;
-    }
-
-    public void setRecclass(String recclass) {
-        this.recclass = recclass;
-    }
-
-    public double getMass() {
-        return mass;
-    }
-
-    public void setMass(double mass) {
-        this.mass = mass;
-    }
-
-    public String getFall() {
-        return fall;
-    }
-
-    public void setFall(String fall) {
-        this.fall = fall;
-    }
     public int getYearAsInt() {
         if (year != null && year.length() >= 4) {
             try {
@@ -73,52 +50,83 @@ public class Meteorite {
         return -1; // Ungültiges Jahr
     }
 
-    public void setYear(String year) {
-        this.year = year;
+    public double getMass() {
+        return mass != null ? mass : 0.0;
     }
 
-    public String getReclat() {
-        return reclat;
+    public void setMass(Double mass) {
+        this.mass = mass;
     }
 
-    public void setReclat(String reclat) {
+    public double getReclat() {
+        return reclat != null ? reclat : 0.0;
+    }
+
+    public void setReclat(Double reclat) {
         this.reclat = reclat;
     }
 
-    public String getReclong() {
-        return reclong;
+    public double getReclong() {
+        return reclong != null ? reclong : 0.0;
     }
 
-    public void setReclong(String reclong) {
+    public void setReclong(Double reclong) {
         this.reclong = reclong;
     }
 
-    public GeoLocation getGeolocation() {
-        return geolocation;
+    public String getRecclass() {
+        return recclass != null ? recclass : "Unknown";
     }
 
-    public void setGeolocation(GeoLocation geolocation) {
+    public void setRecclass(String recclass) {
+        this.recclass = recclass;
+    }
+
+    public String getNametype() {
+        return nametype != null ? nametype : "Unknown";
+    }
+
+    public void setNametype(String nametype) {
+        this.nametype = nametype;
+    }
+
+    public String getFall() {
+        return fall != null ? fall : "Unknown";
+    }
+
+    public void setFall(String fall) {
+        this.fall = fall;
+    }
+
+    public Geolocation getGeolocation() {
+        return geolocation != null ? geolocation : new Geolocation();
+    }
+
+    public void setGeolocation(Geolocation geolocation) {
         this.geolocation = geolocation;
     }
 
-    // Innere Klasse für GeoLocation
-    public static class GeoLocation {
-        private double latitude;
-        private double longitude;
 
-        public double getLatitude() {
-            return latitude;
+    // Innere Klasse für GeoLocation
+    public class Geolocation {
+        private String latitude;
+        private String longitude;
+
+        // Getter und Setter Methoden
+
+        public String getLatitude() {
+            return latitude != null ? latitude : "0.0";
         }
 
-        public void setLatitude(double latitude) {
+        public void setLatitude(String latitude) {
             this.latitude = latitude;
         }
 
-        public double getLongitude() {
-            return longitude;
+        public String getLongitude() {
+            return longitude != null ? longitude : "0.0";
         }
 
-        public void setLongitude(double longitude) {
+        public void setLongitude(String longitude) {
             this.longitude = longitude;
         }
     }
