@@ -1,4 +1,4 @@
-Region:50.0,10.0,2000.0
+Region:50.0,10.0,200.0
 Mass:1000,2000
 Classification:H5,H6
 Year:0,2020

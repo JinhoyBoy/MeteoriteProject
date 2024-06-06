@@ -9,13 +9,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Meteorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Meteorite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MeteoriteAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MeteoriteAnalysis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RegionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RegionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_resources/config.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/expected_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_resources/expected_output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/input.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_resources/test_input.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OutputFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OutputFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PipelineIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PipelineIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_resources/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_resources/config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_resources/expected_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_resources/expected_output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_resources/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_resources/output.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
   <component name="ProjectId" id="2hVCTFNrYFIfmuebzOc1vFz3z9g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -37,6 +39,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.MeteoriteAnalysis.executor": "Run",
+    "JUnit.PipelineIntegrationTest.executor": "Run",
     "Maven.MeteoriteProject [compile].executor": "Run",
     "Maven.MeteoriteProject [exec:java...].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
