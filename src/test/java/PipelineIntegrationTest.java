@@ -14,13 +14,12 @@ public class PipelineIntegrationTest {
     @Test
     public void testPipeline() {
         // Arrange
-        String configFilePath = "test_resources/test_config.txt";
         String inputFilePath = "test_resources/test_input.json";
         String outputFilePath = "test_resources/test_output.json";
         String expectedOutputFilePath = "test_resources/expected_output.json";
 
         // Act
-        Pipeline pipeline = new Pipeline(configFilePath);
+        Pipeline pipeline = new Pipeline();
         pipeline.process(inputFilePath, outputFilePath);
 
         // Assert
