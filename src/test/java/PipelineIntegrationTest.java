@@ -7,22 +7,40 @@ import org.junit.jupiter.api.Test;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
+import java.util.Scanner;
 
 public class PipelineIntegrationTest {
     @Test
     public void testPipeline() {
         // Arrange
-        String configFilePath = "test_resources/test_config.json";
+        String configFilePath = "test_resources/test_config.txt";
         String inputFilePath = "test_resources/test_input.json";
         String outputFilePath = "test_resources/test_output.json";
         String expectedOutputFilePath = "test_resources/expected_output.json";
 
         // Act
-        List<Filter> filters = FilterFactory.createFiltersFromConfigAndConsoleInput(configFilePath);
+        List<String> availableFilters = FilterFactory.loadConfig(configFilePath);
+
+        String[] chosenFilters = {"Region", "Mass"};
+        Scanner consoleScanner = new Scanner(System.in);
+
+        List<Filter> filters = new ArrayList<>();
+        for (String filterName : chosenFilters) {
+            filterName = filterName.trim();
+            if (!availableFilters.contains(filterName)) {
+                System.out.println("Invalid filter: " + filterName);
+                continue;
+            }
+            Filter filter = FilterFactory.createFilter(filterName, consoleScanner);
+            if (filter != null) {
+                filters.add(filter);
+            }
+        }
         Pipeline pipeline = new Pipeline(filters);
         pipeline.process(inputFilePath, outputFilePath);
 
