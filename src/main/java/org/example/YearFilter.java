@@ -12,6 +12,12 @@ public class YearFilter implements Filter {
         this.endYear = endYear;
     }
 
+    // Konstruktor für einen einzelnen Jahrgang
+    public YearFilter(int year) {
+        this.startYear = year;
+        this.endYear = year;
+    }
+
     @Override
     public List<Meteorite> execute(List<Meteorite> meteorites) {
         return meteorites.stream()

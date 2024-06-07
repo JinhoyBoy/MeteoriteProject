@@ -46,9 +46,17 @@ public class FilterFactory {
             case "Year":
                 System.out.print("Enter parameters for Year (startYear,endYear): ");
                 String[] yearParams = consoleScanner.nextLine().split(",");
-                int startYear = Integer.parseInt(yearParams[0].trim());
-                int endYear = Integer.parseInt(yearParams[1].trim());
-                return new YearFilter(startYear, endYear);
+                if (yearParams.length == 1) {
+                    int year = Integer.parseInt(yearParams[0].trim());
+                    return new YearFilter(year);
+                } else if (yearParams.length == 2) {
+                    int startYear = Integer.parseInt(yearParams[0].trim());
+                    int endYear = Integer.parseInt(yearParams[1].trim());
+                    return new YearFilter(startYear, endYear);
+                } else {
+                    System.out.println("Invalid input for Year filter");
+                    return null;
+                }
             default:
                 System.out.println("Unknown filter: " + filterName);
                 return null;
