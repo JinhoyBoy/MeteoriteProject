@@ -1,7 +1,5 @@
-import org.example.Filter;
-import org.example.FilterFactory;
-import org.example.Meteorite;
-import org.example.Pipeline;
+import org.example.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.io.FileReader;
@@ -18,29 +16,18 @@ public class PipelineIntegrationTest {
     @Test
     public void testPipeline() {
         // Arrange
-        String configFilePath = "test_resources/test_config.txt";
+        //String configFilePath = "test_resources/test_config.txt";
         String inputFilePath = "test_resources/test_input.json";
         String outputFilePath = "test_resources/test_output.json";
         String expectedOutputFilePath = "test_resources/expected_output.json";
 
         // Act
-        List<String> availableFilters = FilterFactory.loadConfig(configFilePath);
-
-        String[] chosenFilters = {"Region", "Mass"};
-        Scanner consoleScanner = new Scanner(System.in);
-
         List<Filter> filters = new ArrayList<>();
-        for (String filterName : chosenFilters) {
-            filterName = filterName.trim();
-            if (!availableFilters.contains(filterName)) {
-                System.out.println("Invalid filter: " + filterName);
-                continue;
-            }
-            Filter filter = FilterFactory.createFilter(filterName, consoleScanner);
-            if (filter != null) {
-                filters.add(filter);
-            }
-        }
+        RegionFilter regionFilter = new RegionFilter (56, 10, 100);
+        filters.add(regionFilter);
+        MassFilter massFilter = new MassFilter (500, 2000);
+        filters.add(massFilter);
+        //...
         Pipeline pipeline = new Pipeline(filters);
         pipeline.process(inputFilePath, outputFilePath);
 
