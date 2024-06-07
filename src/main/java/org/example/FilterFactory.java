@@ -26,25 +26,28 @@ public class FilterFactory {
             case "Region":
                 System.out.print("Enter parameters for Region (latitude,longitude,radius): ");
                 String[] regionParams = consoleScanner.nextLine().split(",");
-                double lat = Double.parseDouble(regionParams[0]);
-                double lon = Double.parseDouble(regionParams[1]);
-                double radius = Double.parseDouble(regionParams[2]);
+                double lat = Double.parseDouble(regionParams[0].trim());
+                double lon = Double.parseDouble(regionParams[1].trim());
+                double radius = Double.parseDouble(regionParams[2].trim());
                 return new RegionFilter(lat, lon, radius);
             case "Mass":
                 System.out.print("Enter parameters for Mass (minMass,maxMass): ");
                 String[] massParams = consoleScanner.nextLine().split(",");
-                double minMass = Double.parseDouble(massParams[0]);
-                double maxMass = Double.parseDouble(massParams[1]);
+                double minMass = Double.parseDouble(massParams[0].trim());
+                double maxMass = Double.parseDouble(massParams[1].trim());
                 return new MassFilter(minMass, maxMass);
             case "Classification":
                 System.out.print("Enter parameters for Classification (comma separated classes): ");
                 String[] classifications = consoleScanner.nextLine().split(",");
+                for (int i = 0; i < classifications.length; i++) {
+                    classifications[i] = classifications[i].trim();
+                }
                 return new ClassificationFilter(classifications);
             case "Year":
                 System.out.print("Enter parameters for Year (startYear,endYear): ");
                 String[] yearParams = consoleScanner.nextLine().split(",");
-                int startYear = Integer.parseInt(yearParams[0]);
-                int endYear = Integer.parseInt(yearParams[1]);
+                int startYear = Integer.parseInt(yearParams[0].trim());
+                int endYear = Integer.parseInt(yearParams[1].trim());
                 return new YearFilter(startYear, endYear);
             default:
                 System.out.println("Unknown filter: " + filterName);
