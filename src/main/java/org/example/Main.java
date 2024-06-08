@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.Filters.Filter;
+
 import java.util.List;
 import java.util.Scanner;
 

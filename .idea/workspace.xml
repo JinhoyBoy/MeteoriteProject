@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Kommentar">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="ConfigLoader" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +99,7 @@
       <module name="MeteoriteProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.Filters.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,7 +156,7 @@
       <workItem from="1717743154101" duration="2875000" />
       <workItem from="1717754254338" duration="767000" />
       <workItem from="1717788567986" duration="1280000" />
-      <workItem from="1717833325887" duration="14157000" />
+      <workItem from="1717833325887" duration="14594000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -248,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717881009628</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ConfigLoader">
+      <option name="closed" value="true" />
+      <created>1717882610116</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717882610116</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +268,8 @@
     <MESSAGE value="Some changes to structure 2" />
     <MESSAGE value="FilterSelector" />
     <MESSAGE value="Kommentar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kommentar" />
+    <MESSAGE value="ConfigLoader" />
+    <option name="LAST_COMMIT_MESSAGE" value="ConfigLoader" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
