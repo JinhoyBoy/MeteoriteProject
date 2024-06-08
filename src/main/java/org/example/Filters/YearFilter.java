@@ -1,4 +1,6 @@
-package org.example;
+package org.example.Filters;
+
+import org.example.Meteorite;
 
 import java.util.List;
 import java.util.NavigableMap;

@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.Filters.*;
+
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Scanner;
