@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Kommentare">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Some changes to structure">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FilterSelector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/config.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ClassificationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ClassificationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FilterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FilterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MassFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MassFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MeteoriteAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Pipeline.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/RegionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/RegionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/YearFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/YearFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PipelineIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PipelineIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PipelineIntegrationTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +163,7 @@
       <workItem from="1717743154101" duration="2875000" />
       <workItem from="1717754254338" duration="767000" />
       <workItem from="1717788567986" duration="1280000" />
-      <workItem from="1717833325887" duration="10014000" />
+      <workItem from="1717833325887" duration="10993000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -227,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717853800062</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Some changes to structure">
+      <option name="closed" value="true" />
+      <created>1717877927300</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717877927300</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +239,8 @@
     <MESSAGE value="commit test" />
     <MESSAGE value="FilterFactory added" />
     <MESSAGE value="Kommentare" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kommentare" />
+    <MESSAGE value="Some changes to structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some changes to structure" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

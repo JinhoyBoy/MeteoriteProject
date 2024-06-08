@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 /**
- * Die RegionFilter-Klasse filtert Meteoriten basierend auf ihrer Position innerhalb eines bestimmten Radius um eine gegebene geographische Koordinate.
+ * Die RegionFilter-Klasse filtert Meteoriten basierend auf ihrer Position innerhalb eines bestimmten Radius um eine gegebene geografische Koordinate.
  */
 public class RegionFilter implements Filter {
     private double latitude;
