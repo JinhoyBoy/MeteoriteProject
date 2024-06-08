@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="FilterFactory added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PipelineIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PipelineIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegionFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegionFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_resources/test_output.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_resources/test_output.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +33,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/JinhoyBoy/MeteoriteProject.git&quot;,
-    &quot;accountId&quot;: &quot;381f12b1-3696-4ffd-acae-0d449539acd2&quot;
+    &quot;accountId&quot;: &quot;0432ce1a-fe3c-49a3-b4c6-2ee2cad8babd&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -61,7 +60,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jinhoan/IdeaProjects/MeteoriteProject/target&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/JDK&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -71,7 +70,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.145977&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -97,7 +96,7 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PipelineIntegrationTest">
+  <component name="RunManager" selected="Application.MeteoriteAnalysis">
     <configuration name="MeteoriteAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.MeteoriteAnalysis" />
       <module name="MeteoriteProject" />
@@ -131,19 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MeteoriteAnalysis" />
         <item itemvalue="JUnit.PipelineIntegrationTest" />
         <item itemvalue="JUnit.RegionFilterTest" />
-        <item itemvalue="Application.MeteoriteAnalysis" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
