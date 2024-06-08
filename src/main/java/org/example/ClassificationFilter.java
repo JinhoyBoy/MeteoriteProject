@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import java.util.Scanner;
 
 /**
  * Der ClassificationFilter filtert eine Liste von Meteoriten basierend auf den angegebenen Klassifikationen.
@@ -12,12 +13,23 @@ public class ClassificationFilter implements Filter {
     private Set<String> classifications;
 
     /**
-     * Konstruktor für den ClassificationFilter.
-     *
-     * @param classifications Eine oder mehrere Klassifikationen, die zum Filtern der Meteoriten verwendet werden.
+     * Standardkonstruktor.
      */
-    public ClassificationFilter(String... classifications) {
-        this.classifications = Stream.of(classifications).collect(Collectors.toSet());
+    public ClassificationFilter() {
+    }
+
+    @Override
+    public String getName() {
+        return "Classification";
+    }
+
+    @Override
+    public void configure(Scanner consoleScanner) {
+        System.out.print("Enter parameters for Classification (comma separated classes): ");
+        String[] classifications = consoleScanner.nextLine().split(",");
+        this.classifications = Stream.of(classifications)
+                .map(String::trim)
+                .collect(Collectors.toSet());
     }
 
     /**
@@ -34,4 +46,3 @@ public class ClassificationFilter implements Filter {
                 .collect(Collectors.toList());
     }
 }
-

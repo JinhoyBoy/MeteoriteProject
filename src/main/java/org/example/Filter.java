@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Die Filter-Schnittstelle definiert eine Methode zum Filtern einer Liste von Meteoriten.
@@ -16,4 +17,19 @@ public interface Filter {
      * @return Eine neue Liste von Meteoriten, die den Filterkriterien entsprechen.
      */
     List<Meteorite> execute(List<Meteorite> meteorites);
+
+    /**
+     * Gibt den Namen des Filters zurück.
+     *
+     * @return Der Name des Filters.
+     */
+    String getName();
+
+    /**
+     * Konfiguriert den Filter basierend auf Benutzereingaben.
+     *
+     * @param consoleScanner Der Scanner zum Lesen von Benutzereingaben.
+     */
+    void configure(Scanner consoleScanner);
 }
+

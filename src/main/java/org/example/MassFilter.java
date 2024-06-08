@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 /**
@@ -11,14 +12,28 @@ public class MassFilter implements Filter {
     private double maxMass;
 
     /**
-     * Konstruktor für den MassFilter.
-     *
-     * @param minMass Die minimale Masse eines Meteoriten, die im Filter enthalten sein soll.
-     * @param maxMass Die maximale Masse eines Meteoriten, die im Filter enthalten sein soll.
+     * Standardkonstruktor.
      */
-    public MassFilter(double minMass, double maxMass) {
-        this.minMass = minMass;
+    public MassFilter(double maxMass, double minMass) {
         this.maxMass = maxMass;
+        this.minMass = minMass;
+    }
+
+    @Override
+    public String getName() {
+        return "Mass";
+    }
+
+    @Override
+    public void configure(Scanner consoleScanner) {
+        System.out.print("Enter parameters for Mass (minMass,maxMass): ");
+        String[] massParams = consoleScanner.nextLine().split(",");
+        if (massParams.length == 2) {
+            this.minMass = Double.parseDouble(massParams[0].trim());
+            this.maxMass = Double.parseDouble(massParams[1].trim());
+        } else {
+            System.out.println("Invalid input for Mass filter");
+        }
     }
 
     /**
@@ -35,4 +50,3 @@ public class MassFilter implements Filter {
                 .collect(Collectors.toList());
     }
 }
-

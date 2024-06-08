@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 /**
@@ -11,24 +12,30 @@ public class YearFilter implements Filter {
     private int endYear;
 
     /**
-     * Konstruktor für einen Jahrgangsbereich.
-     *
-     * @param startYear Das Anfangsjahr des Bereichs.
-     * @param endYear Das Endjahr des Bereichs.
+     * Standardkonstruktor.
      */
-    public YearFilter(int startYear, int endYear) {
-        this.startYear = startYear;
-        this.endYear = endYear;
+    public YearFilter() {
     }
 
-    /**
-     * Konstruktor für einen einzelnen Jahrgang.
-     *
-     * @param year Das Jahr, das gefiltert werden soll.
-     */
-    public YearFilter(int year) {
-        this.startYear = year;
-        this.endYear = year;
+    @Override
+    public String getName() {
+        return "Year";
+    }
+
+    @Override
+    public void configure(Scanner consoleScanner) {
+        System.out.print("Enter parameters for Year (startYear,endYear) or (year): ");
+        String[] yearParams = consoleScanner.nextLine().split(",");
+        if (yearParams.length == 1) {
+            int year = Integer.parseInt(yearParams[0].trim());
+            this.startYear = year;
+            this.endYear = year;
+        } else if (yearParams.length == 2) {
+            this.startYear = Integer.parseInt(yearParams[0].trim());
+            this.endYear = Integer.parseInt(yearParams[1].trim());
+        } else {
+            System.out.println("Invalid input for Year filter");
+        }
     }
 
     /**
