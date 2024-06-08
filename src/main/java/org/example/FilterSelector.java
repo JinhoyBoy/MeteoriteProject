@@ -1,5 +1,7 @@
 package org.example;
 
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -7,8 +9,28 @@ import java.util.Scanner;
 public class FilterSelector {
     private final List<String> availableFilters;
 
-    public FilterSelector(List<String> availableFilters) {
-        this.availableFilters = availableFilters;
+    public FilterSelector(String configFilePath) {
+        this.availableFilters = loadConfig(configFilePath);
+    }
+
+    /**
+     * Lädt die verfügbaren Filter aus einer Konfigurationsdatei.
+     *
+     * @param configFilePath Der Pfad zur Konfigurationsdatei.
+     * @return Eine Liste der Namen der verfügbaren Filter.
+     */
+    private List<String> loadConfig(String configFilePath) {
+        List<String> availableFilters = new ArrayList<>();
+
+        try (Scanner scanner = new Scanner(new FileReader(configFilePath))) {
+            while (scanner.hasNextLine()) {
+                availableFilters.add(scanner.nextLine().trim());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return availableFilters;
     }
 
     public List<Filter> selectFilters(Scanner scanner) {

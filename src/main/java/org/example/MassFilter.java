@@ -14,9 +14,7 @@ public class MassFilter implements Filter {
     /**
      * Standardkonstruktor.
      */
-    public MassFilter(double maxMass, double minMass) {
-        this.maxMass = maxMass;
-        this.minMass = minMass;
+    public MassFilter() {
     }
 
     @Override

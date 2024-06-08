@@ -15,8 +15,11 @@ public class RegionFilter implements Filter {
     /**
      * Standardkonstruktor.
      */
+    public RegionFilter() {
+    }
+
+    //weiterer Konstruktor für Testing
     public RegionFilter(double latitude, double longitude, double radius) {
-        // make constructor
         this.latitude = latitude;
         this.longitude = longitude;
         this.radius = radius;

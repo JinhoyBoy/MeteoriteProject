@@ -1,12 +1,8 @@
 package org.example;
 
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Scanner;
-import java.util.ArrayList;
 
 /**
  * Die FilterFactory-Klasse ist verantwortlich für das Laden von Filterkonfigurationen
@@ -33,13 +29,14 @@ public class FilterFactory {
     private static void registerFilter(String filterName, Class<? extends Filter> filterClass) {
         filterRegistry.put(filterName, filterClass);
     }
-
+    /*
     /**
      * Lädt die verfügbaren Filter aus einer Konfigurationsdatei.
      *
      * @param configFilePath Der Pfad zur Konfigurationsdatei.
      * @return Eine Liste der Namen der verfügbaren Filter.
      */
+    /*
     public static List<String> loadConfig(String configFilePath) {
         List<String> availableFilters = new ArrayList<>();
 
@@ -52,8 +49,7 @@ public class FilterFactory {
         }
 
         return availableFilters;
-    }
-
+    }*/
     /**
      * Erstellt ein Filterobjekt basierend auf dem Namen des Filters und den Benutzereingaben.
      *

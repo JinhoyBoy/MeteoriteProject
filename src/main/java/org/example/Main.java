@@ -12,12 +12,13 @@ public class Main {
         String inputFilePath = "input.json";
         String outputFilePath = "output.json";
 
-        // Anzeige der verfügbaren Filter durch die Konfigurationsdatei
-        List<String> availableFilters = FilterFactory.loadConfig(configFilePath);
+        // Erstellen des FilterSelectors mit dem Pfad zur Konfigurationsdatei
+        FilterSelector filterSelector = new FilterSelector(configFilePath);
+
+        // Initialisierung des Scanner-Objekts
         Scanner consoleScanner = new Scanner(System.in);
 
-        // Auswählen der Filter durch Konsoleneingabe
-        FilterSelector filterSelector = new FilterSelector(availableFilters);
+        // Auswahl der Filter mit dem FilterSelector
         List<Filter> filters = filterSelector.selectFilters(consoleScanner);
 
         // Meteoritendaten aus der Eingabedatei lesen
