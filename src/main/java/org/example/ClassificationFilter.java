@@ -25,11 +25,19 @@ public class ClassificationFilter implements Filter {
 
     @Override
     public void configure(Scanner consoleScanner) {
-        System.out.print("Enter parameters for Classification (comma separated classes): ");
-        String[] classifications = consoleScanner.nextLine().split(",");
-        this.classifications = Stream.of(classifications)
-                .map(String::trim)
-                .collect(Collectors.toSet());
+        try {
+            System.out.print("Enter parameters for Classification (comma separated classes): ");
+            String[] classifications = consoleScanner.nextLine().split(",");
+            this.classifications = Stream.of(classifications)
+                    .map(String::trim)
+                    .collect(Collectors.toSet());
+        }
+        catch(NumberFormatException e) {
+            System.out.print("Invalid type of input. Expected input is a text.");
+        }
+        catch(Exception e) {
+            System.out.println("Unexpected error please try again.");
+        }
     }
 
     /**

@@ -24,13 +24,21 @@ public class MassFilter implements Filter {
 
     @Override
     public void configure(Scanner consoleScanner) {
-        System.out.print("Enter parameters for Mass (minMass,maxMass): ");
-        String[] massParams = consoleScanner.nextLine().split(",");
-        if (massParams.length == 2) {
-            this.minMass = Double.parseDouble(massParams[0].trim());
-            this.maxMass = Double.parseDouble(massParams[1].trim());
-        } else {
-            System.out.println("Invalid input for Mass filter");
+        try {
+            System.out.print("Enter parameters for Mass (minMass,maxMass): ");
+            String[] massParams = consoleScanner.nextLine().split(",");
+            if (massParams.length == 2) {
+                this.minMass = Double.parseDouble(massParams[0].trim());
+                this.maxMass = Double.parseDouble(massParams[1].trim());
+            } else {
+                System.out.println("Invalid input format for Mass filter. Expected input is (minMass,maxMass).");
+            }
+        }
+        catch(NumberFormatException e) {
+            System.out.print("Invalid type of input. Expected input is a decimal number.");
+        }
+        catch(Exception e) {
+            System.out.println("Unexpected error please try again.");
         }
     }
 

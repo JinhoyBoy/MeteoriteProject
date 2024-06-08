@@ -32,14 +32,22 @@ public class RegionFilter implements Filter {
 
     @Override
     public void configure(Scanner consoleScanner) {
-        System.out.print("Enter parameters for Region (latitude,longitude,radius): ");
-        String[] regionParams = consoleScanner.nextLine().split(",");
-        if (regionParams.length == 3) {
-            this.latitude = Double.parseDouble(regionParams[0].trim());
-            this.longitude = Double.parseDouble(regionParams[1].trim());
-            this.radius = Double.parseDouble(regionParams[2].trim());
-        } else {
-            System.out.println("Invalid input for Mass filter");
+        try {
+            System.out.print("Enter parameters for Region (latitude,longitude,radius): ");
+            String[] regionParams = consoleScanner.nextLine().split(",");
+            if (regionParams.length == 3) {
+                this.latitude = Double.parseDouble(regionParams[0].trim());
+                this.longitude = Double.parseDouble(regionParams[1].trim());
+                this.radius = Double.parseDouble(regionParams[2].trim());
+            } else {
+                System.out.println("Invalid input for Region filter");
+            }
+        }
+        catch(NumberFormatException e) {
+            System.out.print("Invalid type of input. Expected input is a decimal number.");
+        }
+        catch(Exception e) {
+            System.out.println("Unexpected error please try again.");
         }
     }
 
