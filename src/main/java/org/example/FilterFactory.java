@@ -1,54 +1,55 @@
 package org.example;
 
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * Die FilterFactory-Klasse ist verantwortlich für das Laden von Filterkonfigurationen
+ * aus einer Datei und das Erstellen von Filterobjekten basierend auf Benutzerinput.
+ */
 public class FilterFactory {
-    public static List<String> loadConfig(String configFilePath) {
-        List<String> availableFilters = new ArrayList<>();
 
-        try (Scanner scanner = new Scanner(new FileReader(configFilePath))) {
-            while (scanner.hasNextLine()) {
-                availableFilters.add(scanner.nextLine());
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private static final Map<String, Class<? extends Filter>> filterRegistry = new HashMap<>();
 
-        return availableFilters;
+    static {
+        // Registriere hier alle verfügbaren Filter-Klassen
+        registerFilter("Region", RegionFilter.class);
+        registerFilter("Mass", MassFilter.class);
+        registerFilter("Classification", ClassificationFilter.class);
+        registerFilter("Year", YearFilter.class);
     }
 
+    /**
+     * Registriert eine Filterklasse in der Filterfabrik.
+     *
+     * @param filterName Der Name des Filters.
+     * @param filterClass Die Klasse des Filters.
+     */
+    private static void registerFilter(String filterName, Class<? extends Filter> filterClass) {
+        filterRegistry.put(filterName, filterClass);
+    }
+
+    /**
+     * Erstellt ein Filterobjekt basierend auf dem Namen des Filters und den Benutzereingaben.
+     *
+     * @param filterName Der Name des Filters.
+     * @param consoleScanner Der Scanner zum Lesen von Benutzereingaben.
+     * @return Das erstellte Filterobjekt oder null, wenn der Filtername unbekannt ist.
+     */
     public static Filter createFilter(String filterName, Scanner consoleScanner) {
-        switch (filterName) {
-            case "Region":
-                System.out.print("Enter parameters for Region (latitude,longitude,radius): ");
-                String[] regionParams = consoleScanner.nextLine().split(",");
-                double lat = Double.parseDouble(regionParams[0]);
-                double lon = Double.parseDouble(regionParams[1]);
-                double radius = Double.parseDouble(regionParams[2]);
-                return new RegionFilter(lat, lon, radius);
-            case "Mass":
-                System.out.print("Enter parameters for Mass (minMass,maxMass): ");
-                String[] massParams = consoleScanner.nextLine().split(",");
-                double minMass = Double.parseDouble(massParams[0]);
-                double maxMass = Double.parseDouble(massParams[1]);
-                return new MassFilter(minMass, maxMass);
-            case "Classification":
-                System.out.print("Enter parameters for Classification (comma separated classes): ");
-                String[] classifications = consoleScanner.nextLine().split(",");
-                return new ClassificationFilter(classifications);
-            case "Year":
-                System.out.print("Enter parameters for Year (startYear,endYear): ");
-                String[] yearParams = consoleScanner.nextLine().split(",");
-                int startYear = Integer.parseInt(yearParams[0]);
-                int endYear = Integer.parseInt(yearParams[1]);
-                return new YearFilter(startYear, endYear);
-            default:
-                System.out.println("Unknown filter: " + filterName);
-                return null;
+        Class<? extends Filter> filterClass = filterRegistry.get(filterName);
+        if (filterClass != null) {
+            try {
+                Filter filter = filterClass.getDeclaredConstructor().newInstance();
+                filter.configure(consoleScanner);
+                return filter;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("Unknown filter: " + filterName);
         }
+        return null;
     }
 }

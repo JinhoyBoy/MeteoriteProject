@@ -1,5 +1,8 @@
 package org.example;
 
+/**
+ * Die Klasse repräsentiert einen Meteoriten mit verschiedenen Attributen wie Name, Masse, Jahr usw.
+ */
 public class Meteorite {
     private String name;
     private String id;
@@ -12,6 +15,13 @@ public class Meteorite {
     private Double reclong;
     private Geolocation geolocation;
 
+    /**
+     * Konstruktor für die Klasse Meteorite. (Für den RegionFilterTest)
+     *
+     * @param name Der Name des Meteoriten.
+     * @param reclat Die geografische Breite des Meteoritenfundorts.
+     * @param reclong Die geografische Länge des Meteoritenfundorts.
+     */
     public Meteorite(String name, double reclat, double reclong) {
         this.name = name;
         this.reclat = reclat;

@@ -1,19 +1,52 @@
 package org.example;
 
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/**
+ * Die YearFilter-Klasse filtert Meteoriten basierend auf einem angegebenen Jahr oder Jahrgangsbereich.
+ */
 public class YearFilter implements Filter {
     private int startYear;
     private int endYear;
 
-    public YearFilter(int startYear, int endYear) {
-        this.startYear = startYear;
-        this.endYear = endYear;
+    /**
+     * Standardkonstruktor.
+     */
+    public YearFilter() {
     }
 
     @Override
+    public String getName() {
+        return "Year";
+    }
+
+    @Override
+    public void configure(Scanner consoleScanner) {
+        System.out.print("Enter parameters for Year (startYear,endYear) or (year): ");
+        String[] yearParams = consoleScanner.nextLine().split(",");
+        if (yearParams.length == 1) {
+            int year = Integer.parseInt(yearParams[0].trim());
+            this.startYear = year;
+            this.endYear = year;
+        } else if (yearParams.length == 2) {
+            this.startYear = Integer.parseInt(yearParams[0].trim());
+            this.endYear = Integer.parseInt(yearParams[1].trim());
+        } else {
+            System.out.println("Invalid input for Year filter");
+        }
+    }
+
+    /**
+     * Führt den Filter aus und gibt eine Liste der gefilterten Meteoriten zurück.
+     *
+     * @param meteorites Die Liste der Meteoriten, die gefiltert werden soll.
+     * @return Eine Liste der Meteoriten, die innerhalb des angegebenen Jahresbereichs liegen.
+     */
+    @Override
     public List<Meteorite> execute(List<Meteorite> meteorites) {
+        // Filtert die Meteoriten basierend auf dem Jahr oder Jahrgangsbereich
         return meteorites.stream()
                 .filter(m -> {
                     int year = m.getYearAsInt();

@@ -1,17 +1,46 @@
 package org.example;
 
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
+/**
+ * Der MassFilter filtert eine Liste von Meteoriten basierend auf der angegebenen Massenbereich.
+ */
 public class MassFilter implements Filter {
     private double minMass;
     private double maxMass;
 
-    public MassFilter(double minMass, double maxMass) {
-        this.minMass = minMass;
-        this.maxMass = maxMass;
+    /**
+     * Standardkonstruktor.
+     */
+    public MassFilter() {
     }
 
+    @Override
+    public String getName() {
+        return "Mass";
+    }
+
+    @Override
+    public void configure(Scanner consoleScanner) {
+        System.out.print("Enter parameters for Mass (minMass,maxMass): ");
+        String[] massParams = consoleScanner.nextLine().split(",");
+        if (massParams.length == 2) {
+            this.minMass = Double.parseDouble(massParams[0].trim());
+            this.maxMass = Double.parseDouble(massParams[1].trim());
+        } else {
+            System.out.println("Invalid input for Mass filter");
+        }
+    }
+
+    /**
+     * Führt den Filter auf die gegebene Liste von Meteoriten aus und gibt die gefilterte Liste zurück.
+     * Nur Meteoriten, deren Masse im angegebenen Bereich liegt, werden beibehalten.
+     *
+     * @param meteorites Die Liste der Meteoriten, die gefiltert werden sollen.
+     * @return Eine neue Liste von Meteoriten, die den angegebenen Massenbereich entsprechen.
+     */
     @Override
     public List<Meteorite> execute(List<Meteorite> meteorites) {
         return meteorites.stream()
