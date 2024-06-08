@@ -29,27 +29,7 @@ public class FilterFactory {
     private static void registerFilter(String filterName, Class<? extends Filter> filterClass) {
         filterRegistry.put(filterName, filterClass);
     }
-    /*
-    /**
-     * Lädt die verfügbaren Filter aus einer Konfigurationsdatei.
-     *
-     * @param configFilePath Der Pfad zur Konfigurationsdatei.
-     * @return Eine Liste der Namen der verfügbaren Filter.
-     */
-    /*
-    public static List<String> loadConfig(String configFilePath) {
-        List<String> availableFilters = new ArrayList<>();
 
-        try (Scanner scanner = new Scanner(new FileReader(configFilePath))) {
-            while (scanner.hasNextLine()) {
-                availableFilters.add(scanner.nextLine().trim());
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return availableFilters;
-    }*/
     /**
      * Erstellt ein Filterobjekt basierend auf dem Namen des Filters und den Benutzereingaben.
      *
