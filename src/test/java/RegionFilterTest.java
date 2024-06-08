@@ -2,28 +2,29 @@ import org.example.Meteorite;
 import org.example.RegionFilter;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import java.util.List;
-
-
-//White-Box Test für RegionFilter
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Ein White-Box-Test für den RegionFilter.
+ */
 public class RegionFilterTest {
 
     private RegionFilter filter;
 
+    /**
+     * Einrichtungsmethode, die vor jedem Test aufgerufen wird.
+     */
     @BeforeEach
     public void setUp() {
-        // Setze den RegionFilter mit einem Beispielwert
+        // Setzt den RegionFilter mit einem Beispielwert
         filter = new RegionFilter(50.0, 10.0, 2.0);
     }
 
+    /**
+     * Testet den RegionFilter, wenn die Meteoriten innerhalb des Radius liegen.
+     */
     @Test
     public void testRegionFilterWithinRadius() {
         List<Meteorite> input = List.of(
@@ -35,6 +36,9 @@ public class RegionFilterTest {
         assertEquals("Test1", output.get(0).getName());
     }
 
+    /**
+     * Testet den RegionFilter, wenn die Meteoriten sich an der Grenze des Radius befinden.
+     */
     @Test
     public void testRegionFilterOnBorder() {
         List<Meteorite> input = List.of(
@@ -42,9 +46,12 @@ public class RegionFilterTest {
                 new Meteorite("Test4", 48.0, 8.0)    // außerhalb der Kante
         );
         List<Meteorite> output = filter.execute(input);
-        assertEquals("Test3", output.get(0).getName()); // Kante wird noch mitgezählt
+        assertEquals("Test3", output.get(0).getName()); // Die Kante wird noch mitgezählt
     }
 
+    /**
+     * Testet den RegionFilter, wenn die Meteoriten außerhalb des Radius liegen.
+     */
     @Test
     public void testRegionFilterOutsideRadius() {
         List<Meteorite> input = List.of(
@@ -55,6 +62,9 @@ public class RegionFilterTest {
         assertEquals(0, output.size());
     }
 
+    /**
+     * Testet den RegionFilter mit einer leeren Eingabemenge.
+     */
     @Test
     public void testEmptyInput() {
         List<Meteorite> input = new ArrayList<>();
@@ -62,4 +72,5 @@ public class RegionFilterTest {
         assertEquals(0, output.size());
     }
 }
+
 
