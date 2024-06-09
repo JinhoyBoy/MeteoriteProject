@@ -10,9 +10,9 @@ import java.util.Scanner;
  */
 public class Main extends ConfigLoader {
     public static void main(String[] args) {
-        String configFilePath = "config.json";
-        String inputFilePath = "input.json";
-        String outputFilePath = "output.json";
+        String configFilePath = "src/main/resources/config.json";
+        String inputFilePath = "src/main/resources/input.json";
+        String outputFilePath = "src/main/resources/output.json";
 
         // Initialisierung des Scanner-Objekts
         Scanner consoleScanner = new Scanner(System.in);

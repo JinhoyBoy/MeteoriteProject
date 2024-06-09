@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Small">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/ConfigLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FilterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/FilterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FilterSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/FilterSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/ClassificationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Filters/ClassificationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Filters/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/MassFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Filters/MassFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/RegionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Filters/RegionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/YearFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Filters/YearFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InputFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/InputFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Meteorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Meteorite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OutputFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/OutputFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegionFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegionFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/input.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,11 +85,11 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="C:\DHBW\SoftwareEngeneering2\MeteoriteProject\test_resources" />
       <recent name="C:\DHBW\SoftwareEngeneering2\MeteoriteProject\src\Test\java" />
       <recent name="C:\DHBW\SoftwareEngeneering2\MeteoriteProject\src" />
       <recent name="C:\DHBW\SoftwareEngeneering2\MeteoriteProject\src\main\resources" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -327,7 +319,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717963454619</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Small">
+      <option name="closed" value="true" />
+      <created>1717963736123</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1717963736123</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Small">
+      <option name="closed" value="true" />
+      <created>1717963929773</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1717963929773</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

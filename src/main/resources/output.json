@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Darmstadt",
+    "id": "6603",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 100.0,
+    "fall": "Fell",
+    "year": "1804-01-01T00:00:00.000",
+    "reclat": 49.86667,
+    "reclong": 8.65,
+    "geolocation": {
+      "latitude": "49.86667",
+      "longitude": "8.65"
+    }
+  },
+  {
+    "name": "Hungen",
+    "id": "11986",
+    "nametype": "Valid",
+    "recclass": "H6",
+    "mass": 112.0,
+    "fall": "Fell",
+    "year": "1877-01-01T00:00:00.000",
+    "reclat": 50.3,
+    "reclong": 8.91667,
+    "geolocation": {
+      "latitude": "50.3",
+      "longitude": "8.91667"
+    }
+  },
+  {
+    "name": "Rodach",
+    "id": "22642",
+    "nametype": "Valid",
+    "recclass": "Stone-uncl",
+    "mass": 2900.0,
+    "fall": "Fell",
+    "year": "1775-01-01T00:00:00.000",
+    "reclat": 50.35,
+    "reclong": 10.8,
+    "geolocation": {
+      "latitude": "50.35",
+      "longitude": "10.8"
+    }
+  },
+  {
+    "name": "Dermbach",
+    "id": "6665",
+    "nametype": "Valid",
+    "recclass": "Iron, ungrouped",
+    "mass": 1500.0,
+    "fall": "Found",
+    "year": "1924-01-01T00:00:00.000",
+    "reclat": 50.71667,
+    "reclong": 10.11667,
+    "geolocation": {
+      "latitude": "50.71667",
+      "longitude": "10.11667"
+    }
+  }
+]
