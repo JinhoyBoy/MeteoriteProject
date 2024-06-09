@@ -8,20 +8,17 @@ import java.util.Scanner;
 /**
  * Eine Klasse zur Analyse von Meteoritendaten.
  */
-public class Main {
+public class Main extends ConfigLoader {
     public static void main(String[] args) {
         String configFilePath = "config.json";
         String inputFilePath = "input.json";
         String outputFilePath = "output.json";
 
-        // Initialisierung availableFilters
-        List<String> availableFilters;
-
         // Initialisierung des Scanner-Objekts
         Scanner consoleScanner = new Scanner(System.in);
 
         // Laden der verfügbaren Filter
-        availableFilters = ConfigLoader.loadConfig(configFilePath);
+        List<String> availableFilters = ConfigLoader.loadConfig(configFilePath);
 
         // Initialisierung der FilterFactory mit den verfügbaren Filtern
         FilterFactory.initialize(availableFilters);
