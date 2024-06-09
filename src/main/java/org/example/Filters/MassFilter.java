@@ -39,7 +39,7 @@ public class MassFilter implements Filter {
             }
         }
         catch(NumberFormatException e) {
-            System.out.print("Invalid type of input. Expected input is a decimal number.");
+            System.out.println("Invalid type of input. Expected input is a decimal number.");
         }
         catch(Exception e) {
             System.out.println("Unexpected error please try again.");

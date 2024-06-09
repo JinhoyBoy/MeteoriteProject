@@ -40,7 +40,7 @@ public class ClassificationFilter implements Filter {
             }
         }
         catch(NumberFormatException e) {
-            System.out.print("Invalid type of input. Expected input is a text.");
+            System.out.println("Invalid type of input. Expected input is a text.");
         }
         catch(Exception e) {
             System.out.println("Unexpected error please try again.");

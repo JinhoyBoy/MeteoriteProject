@@ -43,7 +43,7 @@ public class YearFilter implements Filter {
             }
         }
         catch(NumberFormatException e) {
-            System.out.print("Invalid type of input. Expected input is a whole number.");
+            System.out.println("Invalid type of input. Expected input is a whole number.");
         }
         catch(Exception e) {
             System.out.println("Unexpected error please try again.");
