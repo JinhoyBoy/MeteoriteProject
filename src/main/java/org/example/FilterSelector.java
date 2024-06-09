@@ -7,13 +7,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class FilterSelector {
-    private final List<String> availableFilters;
 
-    public FilterSelector(String configFilePath) {
-        this.availableFilters = ConfigLoader.loadConfig(configFilePath);
-    }
 
-    public List<Filter> selectFilters(Scanner scanner) {
+    public static List<Filter> selectFilters(Scanner scanner, List<String> availableFilters) {
         List<Filter> selectedFilters = new ArrayList<>();
 
         // Prompt the user to choose filters

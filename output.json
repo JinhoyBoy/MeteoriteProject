@@ -30,6 +30,21 @@
     }
   },
   {
+    "name": "Rodach",
+    "id": "22642",
+    "nametype": "Valid",
+    "recclass": "Stone-uncl",
+    "mass": 2900.0,
+    "fall": "Fell",
+    "year": "1775-01-01T00:00:00.000",
+    "reclat": 50.35,
+    "reclong": 10.8,
+    "geolocation": {
+      "latitude": "50.35",
+      "longitude": "10.8"
+    }
+  },
+  {
     "name": "Dermbach",
     "id": "6665",
     "nametype": "Valid",

@@ -2,6 +2,8 @@ package org.example;
 
 import org.example.Filters.Filter;
 
+import java.io.ObjectInputFilter;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -14,19 +16,22 @@ public class Main {
         String inputFilePath = "input.json";
         String outputFilePath = "output.json";
 
-        // Erstellen des FilterSelectors mit dem Pfad zur Konfigurationsdatei
-        FilterSelector filterSelector = new FilterSelector(configFilePath);
+        // Initialisierung availableFilters
+        List<String> availableFilters;
 
         // Initialisierung des Scanner-Objekts
         Scanner consoleScanner = new Scanner(System.in);
 
+        // Laden der verfügbaren Filter
+        availableFilters = ConfigLoader.loadConfig(configFilePath);
+
         // Auswahl der Filter mit dem FilterSelector
-        List<Filter> filters = filterSelector.selectFilters(consoleScanner);
+        List<Filter> filters = FilterSelector.selectFilters(consoleScanner, availableFilters);
 
         // Meteoritendaten aus der Eingabedatei lesen
         List<Meteorite> meteorites = InputFilter.read(inputFilePath);
 
-        // Meteoritendaten durch alle Filter in der Pipeline verarbeiten
+        // Meteoritendaten durch alle Filter verarbeiten
         for (Filter filter : filters) {
             meteorites = filter.execute(meteorites);
         }
