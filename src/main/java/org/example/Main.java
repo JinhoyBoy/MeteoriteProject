@@ -2,8 +2,6 @@ package org.example;
 
 import org.example.Filters.Filter;
 
-import java.io.ObjectInputFilter;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -12,7 +10,7 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) {
-        String configFilePath = "config.txt";
+        String configFilePath = "config.json";
         String inputFilePath = "input.json";
         String outputFilePath = "output.json";
 
@@ -24,6 +22,9 @@ public class Main {
 
         // Laden der verfügbaren Filter
         availableFilters = ConfigLoader.loadConfig(configFilePath);
+
+        // Initialisierung der FilterFactory mit den verfügbaren Filtern
+        FilterFactory.initialize(availableFilters);
 
         // Auswahl der Filter mit dem FilterSelector
         List<Filter> filters = FilterSelector.selectFilters(consoleScanner, availableFilters);

@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Some structure change">
+    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="File">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/ClassificationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Filters/ClassificationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Filters/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/MassFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Filters/MassFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/RegionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Filters/RegionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/YearFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Filters/YearFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ConfigLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FilterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FilterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FilterSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FilterSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +270,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717925424424</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Some change: userHelp">
+      <option name="closed" value="true" />
+      <created>1717948750691</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717948750691</updated>
+    </task>
+    <task id="LOCAL-00015" summary="File">
+      <option name="closed" value="true" />
+      <created>1717956605343</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717956605343</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +302,9 @@
     <MESSAGE value="Kommentar" />
     <MESSAGE value="ConfigLoader" />
     <MESSAGE value="Some structure change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some structure change" />
+    <MESSAGE value="Some change: userHelp" />
+    <MESSAGE value="File" />
+    <option name="LAST_COMMIT_MESSAGE" value="File" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

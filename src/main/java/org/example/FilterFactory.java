@@ -1,45 +1,46 @@
 package org.example;
 
-import org.example.Filters.*;
+import org.example.Filters.Filter;
 
-import java.util.Map;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
-/**
- * Die FilterFactory-Klasse ist verantwortlich für das Laden von Filterkonfigurationen
- * aus einer Datei und das Erstellen von Filterobjekten basierend auf Benutzerinput.
- */
 public class FilterFactory {
 
-    private static final Map<String, Class<? extends Filter>> filterRegistry = new HashMap<>();
-
-    static {
-        // Registriere hier alle verfügbaren Filter-Klassen
-        registerFilter("Region", RegionFilter.class);
-        registerFilter("Mass", MassFilter.class);
-        registerFilter("Classification", ClassificationFilter.class);
-        registerFilter("Year", YearFilter.class);
-    }
+    private static Map<String, Class<? extends Filter>> filterRegistry;
 
     /**
-     * Registriert eine Filterklasse in der Filterfabrik.
+     * Initialisiert die Filter-Registry basierend auf den verfügbaren Filtern aus der Konfigurationsdatei.
      *
-     * @param filterName Der Name des Filters.
-     * @param filterClass Die Klasse des Filters.
+     * @param availableFilters Die Liste der verfügbaren Filter.
      */
-    private static void registerFilter(String filterName, Class<? extends Filter> filterClass) {
-        filterRegistry.put(filterName, filterClass);
+    public static void initialize(List<String> availableFilters) {
+        filterRegistry = new HashMap<>();
+        for (String filterName : availableFilters) {
+            try {
+                Class<? extends Filter> filterClass = (Class<? extends Filter>) Class.forName("org.example.Filters." + filterName + "Filter");
+                filterRegistry.put(filterName, filterClass);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     /**
      * Erstellt ein Filterobjekt basierend auf dem Namen des Filters und den Benutzereingaben.
      *
-     * @param filterName Der Name des Filters.
+     * @param filterName     Der Name des Filters.
      * @param consoleScanner Der Scanner zum Lesen von Benutzereingaben.
      * @return Das erstellte Filterobjekt oder null, wenn der Filtername unbekannt ist.
      */
     public static Filter createFilter(String filterName, Scanner consoleScanner) {
+        if (filterRegistry == null) {
+            System.err.println("FilterRegistry ist nicht initialisiert. Rufen Sie zuerst die initialize-Methode auf.");
+            return null;
+        }
+
         Class<? extends Filter> filterClass = filterRegistry.get(filterName);
         if (filterClass != null) {
             try {

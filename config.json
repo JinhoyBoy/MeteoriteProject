@@ -1,20 +1,14 @@
-{
-  "filters": [
-    {
-      "name": "Region",
-      "class": "org.example.Filters.RegionFilter"
-    },
-    {
-      "name": "Mass",
-      "class": "org.example.Filters.MassFilter"
-    },
-    {
-      "name": "Classification",
-      "class": "org.example.Filters.ClassificationFilter"
-    },
-    {
-      "name": "Year",
-      "class": "org.example.Filters.YearFilter"
-    }
-  ]
-}
+[
+  {
+    "name": "Region"
+  },
+  {
+    "name": "Mass"
+  },
+  {
+    "name": "Classification"
+  },
+  {
+    "name": "Year"
+  }
+]
