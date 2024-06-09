@@ -32,6 +32,8 @@ public class MassFilter implements Filter {
             if (massParams.length == 2) {
                 this.minMass = Double.parseDouble(massParams[0].trim());
                 this.maxMass = Double.parseDouble(massParams[1].trim());
+            } else if(massParams[0].equals("h")) {
+                massHelp(consoleScanner);
             } else {
                 System.out.println("Invalid input format for Mass filter. Expected input is (minMass,maxMass).");
             }
@@ -56,5 +58,12 @@ public class MassFilter implements Filter {
         return meteorites.stream()
                 .filter(m -> m.getMass() >= minMass && m.getMass() <= maxMass)
                 .collect(Collectors.toList());
+    }
+
+    private void massHelp(Scanner consoleScanner) {
+        System.out.println("Here you can enter the minimal and maximal weight of the meteor. The output will be meteors within this range.");
+        System.out.println("Both should be a decimal number.");
+        System.out.println();
+        configure(consoleScanner);
     }
 }

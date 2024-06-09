@@ -30,9 +30,14 @@ public class ClassificationFilter implements Filter {
         try {
             System.out.print("Enter parameters for Classification (comma separated classes): ");
             String[] classifications = consoleScanner.nextLine().split(",");
-            this.classifications = Stream.of(classifications)
-                    .map(String::trim)
-                    .collect(Collectors.toSet());
+            if(classifications[0].equals("h")) {
+                classificationHelp(consoleScanner);
+            }
+            else {
+                this.classifications = Stream.of(classifications)
+                        .map(String::trim)
+                        .collect(Collectors.toSet());
+            }
         }
         catch(NumberFormatException e) {
             System.out.print("Invalid type of input. Expected input is a text.");
@@ -54,5 +59,12 @@ public class ClassificationFilter implements Filter {
         return meteorites.stream()
                 .filter(m -> classifications.contains(m.getRecclass()))
                 .collect(Collectors.toList());
+    }
+
+    private void classificationHelp(Scanner consoleScanner) {
+        System.out.println("Here you can enter the classification of different meteorites.");
+        System.out.println("This can be a letter and number.");
+        System.out.println();
+        configure(consoleScanner);
     }
 }

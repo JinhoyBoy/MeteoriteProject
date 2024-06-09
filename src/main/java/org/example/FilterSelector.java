@@ -20,6 +20,7 @@ public class FilterSelector {
         System.out.println("Available filters: " + String.join(", ", availableFilters));
         System.out.print("Enter the filters to use (comma separated): ");
         String[] chosenFilters = scanner.nextLine().split(",");
+        System.out.println("For any help with the individual filters, enter h into the console.");
 
         // Validate and create filter instances
         for (String filterName : chosenFilters) {

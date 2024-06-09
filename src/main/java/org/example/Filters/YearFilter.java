@@ -30,7 +30,9 @@ public class YearFilter implements Filter {
         try {
             System.out.print("Enter parameters for Year (startYear,endYear) or (year): ");
             String[] yearParams = consoleScanner.nextLine().split(",");
-            if (yearParams.length == 1) {
+            if (yearParams[0].equals("h")) {
+                yearHelp(consoleScanner);
+            } else if (yearParams.length == 1) {
                 int year = Integer.parseInt(yearParams[0].trim());
                 this.startYear = year;
                 this.endYear = year;
@@ -38,7 +40,7 @@ public class YearFilter implements Filter {
                 this.startYear = Integer.parseInt(yearParams[0].trim());
                 this.endYear = Integer.parseInt(yearParams[1].trim());
             } else {
-                System.out.println("Invalid input for Year filter");
+                System.out.println("Invalid input format for Year filter. Expected input is (startYear,endYear) or (year).");
             }
         }
         catch(NumberFormatException e) {
@@ -64,5 +66,13 @@ public class YearFilter implements Filter {
                     return year >= startYear && year <= endYear;
                 })
                 .collect(Collectors.toList());
+    }
+
+    private void yearHelp(Scanner consoleScanner) {
+        System.out.println("Here you can enter the start year and the end year of the meteors impact. The output meteors lie within this range");
+        System.out.println("You can also enter just a single year and the output will be just meteors that hit in this year.");
+        System.out.println("The years should be input as whole numbers.");
+        System.out.println();
+        configure(consoleScanner);
     }
 }
