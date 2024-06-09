@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Double.NaN">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Small">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/ConfigLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FilterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/FilterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FilterSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/FilterSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/ClassificationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Filters/ClassificationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Filters/Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/MassFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Filters/MassFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/RegionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Filters/RegionFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/YearFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Filters/YearFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InputFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/InputFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Meteorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/Meteorite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OutputFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/metorite/OutputFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegionFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegionFilterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +113,7 @@
       <module name="MeteoriteProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.Filters.*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -298,7 +308,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717960512211</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Small">
+      <option name="closed" value="true" />
+      <created>1717963193016</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1717963193016</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Small">
+      <option name="closed" value="true" />
+      <created>1717963454619</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1717963454619</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +344,8 @@
     <MESSAGE value="File" />
     <MESSAGE value="Changes to structure (config.json)" />
     <MESSAGE value="Double.NaN" />
-    <option name="LAST_COMMIT_MESSAGE" value="Double.NaN" />
+    <MESSAGE value="Small" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
