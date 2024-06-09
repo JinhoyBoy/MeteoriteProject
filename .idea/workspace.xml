@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Kommentar">
+    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="ConfigLoader">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FilterSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FilterSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/ClassificationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Filters/ClassificationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/MassFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Filters/MassFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/RegionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Filters/RegionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/YearFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Filters/YearFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +31,12 @@
     &quot;assignee&quot;: &quot;JinhoyBoy&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/JinhoyBoy/MeteoriteProject.git",
-    "accountId": "0432ce1a-fe3c-49a3-b4c6-2ee2cad8babd"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JinhoyBoy/MeteoriteProject.git&quot;,
+    &quot;accountId&quot;: &quot;381f12b1-3696-4ffd-acae-0d449539acd2&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -107,7 +104,7 @@
       <module name="MeteoriteProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.Filters.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,6 +138,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -156,7 +161,7 @@
       <workItem from="1717743154101" duration="2875000" />
       <workItem from="1717754254338" duration="767000" />
       <workItem from="1717788567986" duration="1280000" />
-      <workItem from="1717833325887" duration="14157000" />
+      <workItem from="1717833325887" duration="14594000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -246,13 +251,13 @@
       <option name="project" value="LOCAL" />
       <updated>1717881009628</updated>
     </task>
-    <task id="LOCAL-00012" summary="Catching type errors in filters">
+    <task id="LOCAL-00012" summary="ConfigLoader">
       <option name="closed" value="true" />
-      <created>1717886826781</created>
+      <created>1717882610116</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1717886826782</updated>
+      <updated>1717882610116</updated>
     </task>
     <option name="localTasksCounter" value="13" />
     <servers />
@@ -268,8 +273,8 @@
     <MESSAGE value="Some changes to structure 2" />
     <MESSAGE value="FilterSelector" />
     <MESSAGE value="Kommentar" />
-    <MESSAGE value="Catching type errors in filters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Catching type errors in filters" />
+    <MESSAGE value="ConfigLoader" />
+    <option name="LAST_COMMIT_MESSAGE" value="ConfigLoader" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
