@@ -60,16 +60,14 @@ public class Meteorite {
         return -1; // Ungültiges Jahr
     }
 
-    public double getMass() {
-        return mass != null ? mass : 0.0;
-    }
+    public double getMass() {return mass != null ? mass : Double.NaN;}
 
     public void setMass(Double mass) {
         this.mass = mass;
     }
 
     public double getReclat() {
-        return reclat != null ? reclat : 0.0;
+        return reclat != null ? reclat : Double.NaN;
     }
 
     public void setReclat(Double reclat) {
@@ -77,7 +75,7 @@ public class Meteorite {
     }
 
     public double getReclong() {
-        return reclong != null ? reclong : 0.0;
+        return reclong != null ? reclong : Double.NaN;
     }
 
     public void setReclong(Double reclong) {
