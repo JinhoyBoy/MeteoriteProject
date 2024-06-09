@@ -33,5 +33,7 @@ public interface Filter {
      * @param consoleScanner Der Scanner zum Lesen von Benutzereingaben.
      */
     void configure(Scanner consoleScanner);
+
+    void helpUser(Scanner consoleScanner);
 }
 

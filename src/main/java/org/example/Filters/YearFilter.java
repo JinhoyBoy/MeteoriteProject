@@ -3,7 +3,6 @@ package org.example.Filters;
 import org.example.Meteorite;
 
 import java.util.List;
-import java.util.NavigableMap;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
@@ -31,7 +30,7 @@ public class YearFilter implements Filter {
             System.out.print("Enter parameters for Year (startYear,endYear) or (year): ");
             String[] yearParams = consoleScanner.nextLine().split(",");
             if (yearParams[0].equals("h")) {
-                yearHelp(consoleScanner);
+                helpUser(consoleScanner);
             } else if (yearParams.length == 1) {
                 int year = Integer.parseInt(yearParams[0].trim());
                 this.startYear = year;
@@ -68,7 +67,8 @@ public class YearFilter implements Filter {
                 .collect(Collectors.toList());
     }
 
-    private void yearHelp(Scanner consoleScanner) {
+    @Override
+    public void helpUser(Scanner consoleScanner) {
         System.out.println("Here you can enter the start year and the end year of the meteors impact. The output meteors lie within this range");
         System.out.println("You can also enter just a single year and the output will be just meteors that hit in this year.");
         System.out.println("The years should be input as whole numbers.");

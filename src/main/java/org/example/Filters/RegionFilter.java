@@ -42,7 +42,7 @@ public class RegionFilter implements Filter {
                 this.longitude = Double.parseDouble(regionParams[1].trim());
                 this.radius = Double.parseDouble(regionParams[2].trim());
             } else if (regionParams[0].equals("h")) {
-                regionHelp(consoleScanner);
+                helpUser(consoleScanner);
             }
             else {
                 System.out.println("Invalid input format for Region filter. Expected input is (latitude,longitude,radius).");
@@ -84,9 +84,10 @@ public class RegionFilter implements Filter {
         return EARTH_RADIUS * c;
     }
 
-    private void regionHelp(Scanner consoleScanner) {
+    @Override
+    public void helpUser(Scanner consoleScanner) {
         System.out.println("Here you can enter the latitude, as well as the longitude of the region, where the meteor hit.");
-        System.out.println("Both should be a decimal number. The last parameter is the radius in which the meteor should lie." +
+        System.out.println("Both should be a decimal number. The last parameter is the radius in which the meteor should lie (km)." +
                 " This should also be a decimal number.");
         System.out.println();
         configure(consoleScanner);

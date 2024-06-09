@@ -1,5 +1,65 @@
 [
   {
+    "name": "Alessandria",
+    "id": "463",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 908.0,
+    "fall": "Fell",
+    "year": "1860-01-01T00:00:00.000",
+    "reclat": 44.88333,
+    "reclong": 8.75,
+    "geolocation": {
+      "latitude": "44.88333",
+      "longitude": "8.75"
+    }
+  },
+  {
+    "name": "Assisi",
+    "id": "2353",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 2000.0,
+    "fall": "Fell",
+    "year": "1886-01-01T00:00:00.000",
+    "reclat": 43.03333,
+    "reclong": 12.55,
+    "geolocation": {
+      "latitude": "43.03333",
+      "longitude": "12.55"
+    }
+  },
+  {
+    "name": "Breitscheid",
+    "id": "5134",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 1500.0,
+    "fall": "Fell",
+    "year": "1956-01-01T00:00:00.000",
+    "reclat": 50.66694,
+    "reclong": 8.18361,
+    "geolocation": {
+      "latitude": "50.66694",
+      "longitude": "8.18361"
+    }
+  },
+  {
+    "name": "Collescipoli",
+    "id": "5403",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 5000.0,
+    "fall": "Fell",
+    "year": "1890-01-01T00:00:00.000",
+    "reclat": 42.53333,
+    "reclong": 12.61667,
+    "geolocation": {
+      "latitude": "42.53333",
+      "longitude": "12.61667"
+    }
+  },
+  {
     "name": "Darmstadt",
     "id": "6603",
     "nametype": "Valid",
@@ -15,48 +75,408 @@
     }
   },
   {
-    "name": "Hungen",
-    "id": "11986",
+    "name": "Eichstädt",
+    "id": "7775",
     "nametype": "Valid",
-    "recclass": "H6",
-    "mass": 112.0,
+    "recclass": "H5",
+    "mass": 3000.0,
     "fall": "Fell",
-    "year": "1877-01-01T00:00:00.000",
-    "reclat": 50.3,
-    "reclong": 8.91667,
+    "year": "1785-01-01T00:00:00.000",
+    "reclat": 48.9,
+    "reclong": 11.21667,
     "geolocation": {
-      "latitude": "50.3",
-      "longitude": "8.91667"
+      "latitude": "48.9",
+      "longitude": "11.21667"
     }
   },
   {
-    "name": "Rodach",
-    "id": "22642",
+    "name": "Ekeby",
+    "id": "7776",
     "nametype": "Valid",
-    "recclass": "Stone-uncl",
-    "mass": 2900.0,
+    "recclass": "H4",
+    "mass": 3336.0,
     "fall": "Fell",
-    "year": "1775-01-01T00:00:00.000",
-    "reclat": 50.35,
-    "reclong": 10.8,
+    "year": "1939-01-01T00:00:00.000",
+    "reclat": 56.03333,
+    "reclong": 13.0,
     "geolocation": {
-      "latitude": "50.35",
-      "longitude": "10.8"
+      "latitude": "56.03333",
+      "longitude": "13.0"
     }
   },
   {
-    "name": "Dermbach",
-    "id": "6665",
+    "name": "Épinal",
+    "id": "10041",
     "nametype": "Valid",
-    "recclass": "Iron, ungrouped",
+    "recclass": "H5",
+    "mass": 277.0,
+    "fall": "Fell",
+    "year": "1822-01-01T00:00:00.000",
+    "reclat": 48.18333,
+    "reclong": 6.46667,
+    "geolocation": {
+      "latitude": "48.18333",
+      "longitude": "6.46667"
+    }
+  },
+  {
+    "name": "Favars",
+    "id": "10078",
+    "nametype": "Valid",
+    "recclass": "H5",
     "mass": 1500.0,
-    "fall": "Found",
-    "year": "1924-01-01T00:00:00.000",
-    "reclat": 50.71667,
-    "reclong": 10.11667,
+    "fall": "Fell",
+    "year": "1844-01-01T00:00:00.000",
+    "reclat": 44.38333,
+    "reclong": 2.81667,
     "geolocation": {
-      "latitude": "50.71667",
-      "longitude": "10.11667"
+      "latitude": "44.38333",
+      "longitude": "2.81667"
+    }
+  },
+  {
+    "name": "Gnadenfrei",
+    "id": "10936",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 1750.0,
+    "fall": "Fell",
+    "year": "1879-01-01T00:00:00.000",
+    "reclat": 50.66667,
+    "reclong": 16.76667,
+    "geolocation": {
+      "latitude": "50.66667",
+      "longitude": "16.76667"
+    }
+  },
+  {
+    "name": "Grüneberg",
+    "id": "11426",
+    "nametype": "Valid",
+    "recclass": "H4",
+    "mass": 1000.0,
+    "fall": "Fell",
+    "year": "1841-01-01T00:00:00.000",
+    "reclat": 51.93333,
+    "reclong": 15.5,
+    "geolocation": {
+      "latitude": "51.93333",
+      "longitude": "15.5"
+    }
+  },
+  {
+    "name": "Grzempach",
+    "id": "11429",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 690.0,
+    "fall": "Fell",
+    "year": "1910-01-01T00:00:00.000",
+    "reclat": 52.86667,
+    "reclong": 16.63333,
+    "geolocation": {
+      "latitude": "52.86667",
+      "longitude": "16.63333"
+    }
+  },
+  {
+    "name": "Hedeskoga",
+    "id": "11869",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 3500.0,
+    "fall": "Fell",
+    "year": "1922-01-01T00:00:00.000",
+    "reclat": 55.46667,
+    "reclong": 13.78333,
+    "geolocation": {
+      "latitude": "55.46667",
+      "longitude": "13.78333"
+    }
+  },
+  {
+    "name": "Kerilis",
+    "id": "12282",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 5000.0,
+    "fall": "Fell",
+    "year": "1874-01-01T00:00:00.000",
+    "reclat": 48.4,
+    "reclong": -3.3,
+    "geolocation": {
+      "latitude": "48.4",
+      "longitude": "-3.3"
+    }
+  },
+  {
+    "name": "Laborel",
+    "id": "12408",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 3833.0,
+    "fall": "Fell",
+    "year": "1871-01-01T00:00:00.000",
+    "reclat": 44.28333,
+    "reclong": 5.58333,
+    "geolocation": {
+      "latitude": "44.28333",
+      "longitude": "5.58333"
+    }
+  },
+  {
+    "name": "Le Pressoir",
+    "id": "12748",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 3000.0,
+    "fall": "Fell",
+    "year": "1845-01-01T00:00:00.000",
+    "reclat": 47.16667,
+    "reclong": 0.43333,
+    "geolocation": {
+      "latitude": "47.16667",
+      "longitude": "0.43333"
+    }
+  },
+  {
+    "name": "Morávka",
+    "id": "16742",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 633.0,
+    "fall": "Fell",
+    "year": "2000-01-01T00:00:00.000",
+    "reclat": 49.6,
+    "reclong": 18.53333,
+    "geolocation": {
+      "latitude": "49.6",
+      "longitude": "18.53333"
+    }
+  },
+  {
+    "name": "Mornans",
+    "id": "16747",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 1300.0,
+    "fall": "Fell",
+    "year": "1875-01-01T00:00:00.000",
+    "reclat": 44.6,
+    "reclong": 5.13333,
+    "geolocation": {
+      "latitude": "44.6",
+      "longitude": "5.13333"
+    }
+  },
+  {
+    "name": "Noventa Vicentina",
+    "id": "17930",
+    "nametype": "Valid",
+    "recclass": "H4",
+    "mass": 177.0,
+    "fall": "Fell",
+    "year": "1971-01-01T00:00:00.000",
+    "reclat": 45.29167,
+    "reclong": 11.52722,
+    "geolocation": {
+      "latitude": "45.29167",
+      "longitude": "11.52722"
+    }
+  },
+  {
+    "name": "Oesede",
+    "id": "17988",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 1400.0,
+    "fall": "Fell",
+    "year": "1927-01-01T00:00:00.000",
+    "reclat": 52.28333,
+    "reclong": 8.05,
+    "geolocation": {
+      "latitude": "52.28333",
+      "longitude": "8.05"
+    }
+  },
+  {
+    "name": "Simmern",
+    "id": "23603",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 1222.0,
+    "fall": "Fell",
+    "year": "1920-01-01T00:00:00.000",
+    "reclat": 49.98333,
+    "reclong": 7.53333,
+    "geolocation": {
+      "latitude": "49.98333",
+      "longitude": "7.53333"
+    }
+  },
+  {
+    "name": "Slavetic",
+    "id": "23626",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 1708.0,
+    "fall": "Fell",
+    "year": "1868-01-01T00:00:00.000",
+    "reclat": 45.68333,
+    "reclong": 15.6,
+    "geolocation": {
+      "latitude": "45.68333",
+      "longitude": "15.6"
+    }
+  },
+  {
+    "name": "Sologne",
+    "id": "23663",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 54.0,
+    "fall": "Fell",
+    "year": "1860-01-01T00:00:00.000",
+    "reclat": 47.36667,
+    "reclong": 1.73333,
+    "geolocation": {
+      "latitude": "47.36667",
+      "longitude": "1.73333"
+    }
+  },
+  {
+    "name": "Ste. Marguerite",
+    "id": "23099",
+    "nametype": "Valid",
+    "recclass": "H4",
+    "mass": 4960.0,
+    "fall": "Fell",
+    "year": "1962-01-01T00:00:00.000",
+    "reclat": 50.76667,
+    "reclong": 3.0,
+    "geolocation": {
+      "latitude": "50.76667",
+      "longitude": "3.0"
+    }
+  },
+  {
+    "name": "Utzenstorf",
+    "id": "24136",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 3422.0,
+    "fall": "Fell",
+    "year": "1928-01-01T00:00:00.000",
+    "reclat": 47.11667,
+    "reclong": 7.55,
+    "geolocation": {
+      "latitude": "47.11667",
+      "longitude": "7.55"
+    }
+  },
+  {
+    "name": "Wessely",
+    "id": "24244",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 3750.0,
+    "fall": "Fell",
+    "year": "1831-01-01T00:00:00.000",
+    "reclat": 48.95,
+    "reclong": 17.38333,
+    "geolocation": {
+      "latitude": "48.95",
+      "longitude": "17.38333"
+    }
+  },
+  {
+    "name": "Zebrak",
+    "id": "30397",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 2000.0,
+    "fall": "Fell",
+    "year": "1824-01-01T00:00:00.000",
+    "reclat": 49.88333,
+    "reclong": 13.91667,
+    "geolocation": {
+      "latitude": "49.88333",
+      "longitude": "13.91667"
+    }
+  },
+  {
+    "name": "Zsadany",
+    "id": "30413",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 552.0,
+    "fall": "Fell",
+    "year": "1875-01-01T00:00:00.000",
+    "reclat": 46.93333,
+    "reclong": 21.5,
+    "geolocation": {
+      "latitude": "46.93333",
+      "longitude": "21.5"
+    }
+  },
+  {
+    "name": "Gilzem",
+    "id": "10916",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 436.0,
+    "fall": "Found",
+    "year": "1987-01-01T00:00:00.000",
+    "reclat": 49.87361,
+    "reclong": 6.50556,
+    "geolocation": {
+      "latitude": "49.87361",
+      "longitude": "6.50556"
+    }
+  },
+  {
+    "name": "Lago Valscura",
+    "id": "32764",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 200.0,
+    "fall": "Found",
+    "year": "1995-01-01T00:00:00.000",
+    "reclat": 44.19167,
+    "reclong": 7.20028,
+    "geolocation": {
+      "latitude": "44.19167",
+      "longitude": "7.20028"
+    }
+  },
+  {
+    "name": "Rumanová",
+    "id": "22781",
+    "nametype": "Valid",
+    "recclass": "H5",
+    "mass": 4300.0,
+    "fall": "Found",
+    "year": "1994-01-01T00:00:00.000",
+    "reclat": 48.348,
+    "reclong": 17.866,
+    "geolocation": {
+      "latitude": "48.348",
+      "longitude": "17.866"
+    }
+  },
+  {
+    "name": "Tessera",
+    "id": "23905",
+    "nametype": "Valid",
+    "recclass": "H4",
+    "mass": 51.3,
+    "fall": "Found",
+    "year": "2000-01-01T00:00:00.000",
+    "reclat": 45.50833,
+    "reclong": 12.30833,
+    "geolocation": {
+      "latitude": "45.50833",
+      "longitude": "12.30833"
     }
   }
 ]

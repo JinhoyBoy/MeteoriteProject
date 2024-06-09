@@ -31,7 +31,7 @@ public class ClassificationFilter implements Filter {
             System.out.print("Enter parameters for Classification (comma separated classes): ");
             String[] classifications = consoleScanner.nextLine().split(",");
             if(classifications[0].equals("h")) {
-                classificationHelp(consoleScanner);
+                helpUser(consoleScanner);
             }
             else {
                 this.classifications = Stream.of(classifications)
@@ -61,9 +61,10 @@ public class ClassificationFilter implements Filter {
                 .collect(Collectors.toList());
     }
 
-    private void classificationHelp(Scanner consoleScanner) {
+    @Override
+    public void helpUser(Scanner consoleScanner) {
         System.out.println("Here you can enter the classification of different meteorites.");
-        System.out.println("This can be a letter and number.");
+        System.out.println("This should be a letter and a number combined (e.g. H5).");
         System.out.println();
         configure(consoleScanner);
     }
