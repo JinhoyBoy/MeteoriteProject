@@ -29,6 +29,13 @@ public class Meteorite {
     }
 
     // Getter und Setter Methoden
+    public String getId() {
+        return id != null ? id : "Unknown";
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name != null ? name : "Unknown";
@@ -123,7 +130,7 @@ public class Meteorite {
         // Getter und Setter Methoden
 
         public String getLatitude() {
-            return latitude != null ? latitude : "0.0";
+            return latitude != null ? latitude : "NaN";
         }
 
         public void setLatitude(String latitude) {
@@ -131,7 +138,7 @@ public class Meteorite {
         }
 
         public String getLongitude() {
-            return longitude != null ? longitude : "0.0";
+            return longitude != null ? longitude : "NaN";
         }
 
         public void setLongitude(String longitude) {

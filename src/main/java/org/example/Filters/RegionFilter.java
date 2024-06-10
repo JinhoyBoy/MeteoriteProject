@@ -64,9 +64,6 @@ public class RegionFilter implements Filter {
     }
 
     private boolean isWithinRadius(Meteorite meteorite) {
-        if (meteorite.getReclat() == 0.0 || meteorite.getReclong() == 0.0) {
-            return false;
-        }
         double lat = meteorite.getReclat();
         double lon = meteorite.getReclong();
         double distance = haversine(latitude, longitude, lat, lon);

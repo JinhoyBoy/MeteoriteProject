@@ -63,7 +63,7 @@ public class MassFilter implements Filter {
     @Override
     public void helpUser(Scanner consoleScanner) {
         System.out.println("Here you can enter the minimal and maximal weight of the meteor. The output will be meteors within this range.");
-        System.out.println("Both should be a decimal number (kg).");
+        System.out.println("Both should be a decimal number (g).");
         System.out.println();
         configure(consoleScanner);
     }
