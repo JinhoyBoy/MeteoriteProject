@@ -27,6 +27,18 @@ public class RegionFilter implements Filter {
         this.radius = radius;
     }
 
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
     @Override
     public String getName() {
         return "Region";

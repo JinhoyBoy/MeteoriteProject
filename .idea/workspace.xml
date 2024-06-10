@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Small structure change">
+    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Better OutputFilter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/MassFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Filters/MassFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Filters/RegionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Filters/RegionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Meteorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Meteorite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OutputFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/OutputFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegionFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegionFilterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="EBNF" />
+        <option value="UML Sequence" />
       </list>
     </option>
   </component>
@@ -51,33 +50,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MeteoriteAnalysis.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PipelineIntegrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RegionFilterTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.MeteoriteProject [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.MeteoriteProject [exec:java...].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jinhoan/IdeaProjects/MeteoriteProject/target&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/jinhoan/IdeaProjects/MeteoriteProject/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.145977&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.MeteoriteAnalysis.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "JUnit.PipelineIntegrationTest.executor": "Run",
+    "JUnit.RegionFilterTest.executor": "Run",
+    "Maven.MeteoriteProject [compile].executor": "Run",
+    "Maven.MeteoriteProject [exec:java...].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/jinhoan/IdeaProjects/MeteoriteProject/target",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/jinhoan/IdeaProjects/MeteoriteProject/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.145977",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/target" />
@@ -103,7 +103,7 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.RegionFilterTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="MeteoriteProject" />
@@ -113,15 +113,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PipelineIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MeteoriteProject" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PipelineIntegrationTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,9 +128,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.PipelineIntegrationTest" />
         <item itemvalue="JUnit.RegionFilterTest" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +157,8 @@
       <workItem from="1717754254338" duration="767000" />
       <workItem from="1717788567986" duration="1280000" />
       <workItem from="1717833325887" duration="14594000" />
-      <workItem from="1718001996101" duration="3376000" />
+      <workItem from="1718001996101" duration="7271000" />
+      <workItem from="1718034200793" duration="6007000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -345,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717965994317</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Better OutputFilter">
+      <option name="closed" value="true" />
+      <created>1718006053415</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1718006053415</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +366,8 @@
     <MESSAGE value="Double.NaN" />
     <MESSAGE value="Small" />
     <MESSAGE value="Small structure change" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small structure change" />
+    <MESSAGE value="Better OutputFilter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better OutputFilter" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
