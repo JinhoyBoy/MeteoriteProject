@@ -1,5 +1,5 @@
-import org.example.Meteorite;
-import org.example.Filters.RegionFilter;
+import org.meteorite_filter.Meteorite;
+import org.meteorite_filter.Filters.RegionFilter;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;

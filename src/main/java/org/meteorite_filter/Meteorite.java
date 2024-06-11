@@ -1,4 +1,4 @@
-package org.example;
+package org.meteorite_filter;
 
 /**
  * Die Klasse repräsentiert einen Meteoriten mit verschiedenen Attributen wie Name, Masse, Jahr usw.

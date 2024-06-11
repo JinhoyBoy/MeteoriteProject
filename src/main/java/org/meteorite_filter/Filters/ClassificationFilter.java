@@ -1,6 +1,6 @@
-package org.example.Filters;
+package org.meteorite_filter.Filters;
 
-import org.example.Meteorite;
+import org.meteorite_filter.Meteorite;
 
 import java.util.List;
 import java.util.Set;
@@ -64,7 +64,7 @@ public class ClassificationFilter implements Filter {
     @Override
     public void helpUser(Scanner consoleScanner) {
         System.out.println("Here you can enter the classification of different meteorites.");
-        System.out.println("This should be a letter and a number combined (e.g. H5).");
+        System.out.println("This should be a String (e.g. H5).");
         System.out.println();
         configure(consoleScanner);
     }

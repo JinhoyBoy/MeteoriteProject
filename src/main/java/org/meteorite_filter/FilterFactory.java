@@ -1,6 +1,6 @@
-package org.example;
+package org.meteorite_filter;
 
-import org.example.Filters.Filter;
+import org.meteorite_filter.Filters.Filter;
 
 import java.util.HashMap;
 import java.util.List;
@@ -20,7 +20,7 @@ public class FilterFactory {
         filterRegistry = new HashMap<>();
         for (String filterName : availableFilters) {
             try {
-                Class<? extends Filter> filterClass = (Class<? extends Filter>) Class.forName("org.example.Filters." + filterName + "Filter");
+                Class<? extends Filter> filterClass = (Class<? extends Filter>) Class.forName("org.meteorite_filter.Filters." + filterName + "Filter");
                 filterRegistry.put(filterName, filterClass);
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();

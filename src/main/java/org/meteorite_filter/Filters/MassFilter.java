@@ -1,6 +1,6 @@
-package org.example.Filters;
+package org.meteorite_filter.Filters;
 
-import org.example.Meteorite;
+import org.meteorite_filter.Meteorite;
 
 import java.util.List;
 import java.util.Scanner;

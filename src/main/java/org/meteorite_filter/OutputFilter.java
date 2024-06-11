@@ -1,4 +1,4 @@
-package org.example;
+package org.meteorite_filter;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
