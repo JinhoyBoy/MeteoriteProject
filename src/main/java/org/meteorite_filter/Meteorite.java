@@ -28,32 +28,21 @@ public class Meteorite {
         this.reclong = reclong;
     }
 
-    // Getter und Setter Methoden
-    public String getId() {
-        return id != null ? id : "Unknown";
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
+    // Getter Methoden
 
     public String getName() {
         return name != null ? name : "Unknown";
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getId() {
+        return id != null ? id : "Unknown";
     }
 
     public String getYear() {
         return year;
     }
 
-    public void setYear(String year) {
-        this.year = year;
-    }
-
-    // Weitere Getter und Setter Methoden für die anderen Felder
+    // Getter Methode, um Jahr als Integer zu bekommen
 
     public int getYearAsInt() {
         if (year != null && year.length() >= 4) {
@@ -67,58 +56,32 @@ public class Meteorite {
         return -1; // Ungültiges Jahr
     }
 
-    public double getMass() {return mass != null ? mass : Double.NaN;}
+    // Weitere Getter Methoden für die anderen Felder
 
-    public void setMass(Double mass) {
-        this.mass = mass;
-    }
+    public double getMass() {return mass != null ? mass : Double.NaN;}
 
     public double getReclat() {
         return reclat != null ? reclat : Double.NaN;
-    }
-
-    public void setReclat(Double reclat) {
-        this.reclat = reclat;
     }
 
     public double getReclong() {
         return reclong != null ? reclong : Double.NaN;
     }
 
-    public void setReclong(Double reclong) {
-        this.reclong = reclong;
-    }
-
     public String getRecclass() {
         return recclass != null ? recclass : "Unknown";
-    }
-
-    public void setRecclass(String recclass) {
-        this.recclass = recclass;
     }
 
     public String getNametype() {
         return nametype != null ? nametype : "Unknown";
     }
 
-    public void setNametype(String nametype) {
-        this.nametype = nametype;
-    }
-
     public String getFall() {
         return fall != null ? fall : "Unknown";
     }
 
-    public void setFall(String fall) {
-        this.fall = fall;
-    }
-
     public Geolocation getGeolocation() {
         return geolocation != null ? geolocation : new Geolocation();
-    }
-
-    public void setGeolocation(Geolocation geolocation) {
-        this.geolocation = geolocation;
     }
 
 
@@ -127,22 +90,14 @@ public class Meteorite {
         private String latitude;
         private String longitude;
 
-        // Getter und Setter Methoden
+        // Getter Methoden
 
         public String getLatitude() {
             return latitude != null ? latitude : "NaN";
         }
 
-        public void setLatitude(String latitude) {
-            this.latitude = latitude;
-        }
-
         public String getLongitude() {
             return longitude != null ? longitude : "NaN";
-        }
-
-        public void setLongitude(String longitude) {
-            this.longitude = longitude;
         }
     }
 }

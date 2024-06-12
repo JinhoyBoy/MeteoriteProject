@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Rename Package">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/ConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/ConfigLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/FilterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/FilterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/FilterSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/FilterSelector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Filters/ClassificationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Filters/ClassificationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Filters/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Filters/Filter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Filters/MassFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Filters/MassFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Filters/RegionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Filters/RegionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Filters/YearFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Filters/YearFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegionFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegionFilterTest.java" afterDir="false" />
+    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Kommentare und Semikolon">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Meteorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Meteorite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +158,7 @@
       <workItem from="1718001996101" duration="7271000" />
       <workItem from="1718034200793" duration="6670000" />
       <workItem from="1718132646588" duration="2491000" />
-      <workItem from="1718135769065" duration="7297000" />
+      <workItem from="1718135769065" duration="7765000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -369,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718135467342</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Kommentare und Semikolon">
+      <option name="closed" value="true" />
+      <created>1718196809793</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1718196809793</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +393,8 @@
     <MESSAGE value="Better OutputFilter" />
     <MESSAGE value="White Box Test" />
     <MESSAGE value="Rename Package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename Package" />
+    <MESSAGE value="Kommentare und Semikolon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kommentare und Semikolon" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
