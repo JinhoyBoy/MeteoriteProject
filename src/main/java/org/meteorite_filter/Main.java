@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 /**
  * Eine Klasse zur Analyse von Meteoritendaten.
+ * Basierend auf der Pipes und Filter Architektur.
  */
 public class Main extends ConfigLoader {
     public static void main(String[] args) {

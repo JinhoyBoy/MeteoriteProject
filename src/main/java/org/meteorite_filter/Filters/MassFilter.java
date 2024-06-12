@@ -19,23 +19,33 @@ public class MassFilter implements Filter {
     public MassFilter() {
     }
 
+    /**
+     * Gibt den Namen des Filters zurück.
+     *
+     * @return Der Name des Filters.
+     */
     @Override
     public String getName() {
         return "Mass";
     }
 
+    /**
+     * Konfiguriert den Filter basierend auf Benutzereingaben.
+     *
+     * @param consoleScanner Der Scanner zum Einlesen der Benutzereingaben.
+     */
     @Override
     public void configure(Scanner consoleScanner) {
         try {
-            System.out.print("Enter parameters for Mass (minMass,maxMass): ");
-            String[] massParams = consoleScanner.nextLine().split(",");
+            System.out.print("Enter parameters for Mass "+ "\u001B[33m" +"minMass; maxMass" + "\u001B[0m" +": ");
+            String[] massParams = consoleScanner.nextLine().split(";");
             if (massParams.length == 2) {
                 this.minMass = Double.parseDouble(massParams[0].trim());
                 this.maxMass = Double.parseDouble(massParams[1].trim());
             } else if(massParams[0].equals("h")) {
                 helpUser(consoleScanner);
             } else {
-                System.out.println("Invalid input format for Mass filter. Expected input is (minMass,maxMass).");
+                System.out.println("Invalid input format for Mass filter. Expected input is (minMass; maxMass).");
             }
         }
         catch(NumberFormatException e) {
@@ -60,6 +70,11 @@ public class MassFilter implements Filter {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Gibt dem Benutzer Hilfestellung zur Eingabe der Mass-Parameter.
+     *
+     * @param consoleScanner Der Scanner zum Einlesen der Benutzereingaben.
+     */
     @Override
     public void helpUser(Scanner consoleScanner) {
         System.out.println("Here you can enter the minimal and maximal weight of the meteor. The output will be meteors within this range.");

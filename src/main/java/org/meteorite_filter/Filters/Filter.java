@@ -34,6 +34,11 @@ public interface Filter {
      */
     void configure(Scanner consoleScanner);
 
+    /**
+     * Gibt dem Benutzer Hilfestellung zur Eingabe der Filter-Parameter.
+     *
+     * @param consoleScanner Ein Scanner-Objekt zum Lesen der Benutzereingabe.
+     */
     void helpUser(Scanner consoleScanner);
 }
 

@@ -19,16 +19,26 @@ public class YearFilter implements Filter {
     public YearFilter() {
     }
 
+    /**
+     * Gibt den Namen des Filters zurück.
+     *
+     * @return Der Name des Filters.
+     */
     @Override
     public String getName() {
         return "Year";
     }
 
+    /**
+     * Konfiguriert den Filter basierend auf Benutzereingaben.
+     *
+     * @param consoleScanner Der Scanner zum Einlesen der Benutzereingaben.
+     */
     @Override
     public void configure(Scanner consoleScanner) {
         try {
-            System.out.print("Enter parameters for Year (startYear,endYear) or (year): ");
-            String[] yearParams = consoleScanner.nextLine().split(",");
+            System.out.print("Enter parameters for Year " +"\u001B[33m"+ "startYear; endYear" +"\u001B[0m"+ " or " +"\u001B[33m"+ "year"+ "\u001B[0m" + ": ");
+            String[] yearParams = consoleScanner.nextLine().split(";");
             if (yearParams[0].equals("h")) {
                 helpUser(consoleScanner);
             } else if (yearParams.length == 1) {
@@ -39,7 +49,7 @@ public class YearFilter implements Filter {
                 this.startYear = Integer.parseInt(yearParams[0].trim());
                 this.endYear = Integer.parseInt(yearParams[1].trim());
             } else {
-                System.out.println("Invalid input format for Year filter. Expected input is (startYear,endYear) or (year).");
+                System.out.println("Invalid input format for Year filter. Expected input is (startYear;endYear) or (year).");
             }
         }
         catch(NumberFormatException e) {
@@ -67,6 +77,11 @@ public class YearFilter implements Filter {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Gibt dem Benutzer Hilfestellung zur Eingabe der Year-Parameter.
+     *
+     * @param consoleScanner Der Scanner zum Einlesen der Benutzereingaben.
+     */
     @Override
     public void helpUser(Scanner consoleScanner) {
         System.out.println("Here you can enter the start year and the end year of the meteors impact. The output meteors lie within this range");

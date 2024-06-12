@@ -9,6 +9,9 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Die ConfigLoader-Klasse lädt die verfügbaren Filter aus einer Konfigurationsdatei.
+ */
 public class ConfigLoader {
     /**
      * Lädt die verfügbaren Filter aus einer Konfigurationsdatei.
@@ -19,12 +22,12 @@ public class ConfigLoader {
     public static List<String> loadConfig(String configFilePath) {
         List<String> availableFilters = null;
         try (FileReader reader = new FileReader(configFilePath)) {
-            // Verwende Gson, um die JSON-Datei zu parsen
+            // Verwendet Gson, um die JSON-Datei zu parsen
             Gson gson = new Gson();
             Type listType = new TypeToken<List<FilterConfig>>(){}.getType();
             List<FilterConfig> filters = gson.fromJson(reader, listType);
 
-            // Extrahiere die Namen der Filter
+            // Extrahiert die Namen der Filter
             availableFilters = new ArrayList<>();
             for (FilterConfig filter : filters) {
                 availableFilters.add(filter.getName());
@@ -36,10 +39,17 @@ public class ConfigLoader {
         return availableFilters;
     }
 
-    // Innere Klasse zur Repräsentation eines Filters in der JSON-Datei
+    /**
+     * Innere Klasse zur Repräsentation eines Filters in der JSON-Datei.
+     */
     private static class FilterConfig {
         private String name;
 
+        /**
+         * Gibt den Namen des Filters zurück.
+         *
+         * @return Der Name des Filters.
+         */
         public String getName() {
             return name;
         }

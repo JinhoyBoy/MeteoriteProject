@@ -20,29 +20,36 @@ public class ClassificationFilter implements Filter {
     public ClassificationFilter() {
     }
 
+    /**
+     * Gibt den Namen des Filters zurück.
+     *
+     * @return Der Name des Filters.
+     */
     @Override
     public String getName() {
         return "Classification";
     }
 
+    /**
+     * Konfiguriert den Filter basierend auf der Benutzereingabe.
+     *
+     * @param consoleScanner Ein Scanner-Objekt zum Lesen der Benutzereingabe.
+     */
     @Override
     public void configure(Scanner consoleScanner) {
         try {
-            System.out.print("Enter parameters for Classification (comma separated classes): ");
-            String[] classifications = consoleScanner.nextLine().split(",");
-            if(classifications[0].equals("h")) {
+            System.out.print("Enter parameters for Classification " + "\u001B[33m" + "semicolon separated classes" + "\u001B[0m" + ": ");
+            String[] classifications = consoleScanner.nextLine().split(";");
+            if (classifications[0].equals("h")) {
                 helpUser(consoleScanner);
-            }
-            else {
+            } else {
                 this.classifications = Stream.of(classifications)
                         .map(String::trim)
                         .collect(Collectors.toSet());
             }
-        }
-        catch(NumberFormatException e) {
+        } catch (NumberFormatException e) {
             System.out.println("Invalid type of input. Expected input is a text.");
-        }
-        catch(Exception e) {
+        } catch (Exception e) {
             System.out.println("Unexpected error please try again.");
         }
     }
@@ -61,6 +68,11 @@ public class ClassificationFilter implements Filter {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * Gibt dem Benutzer Hilfestellung zur Eingabe der Klassifikationen.
+     *
+     * @param consoleScanner Ein Scanner-Objekt zum Lesen der Benutzereingabe.
+     */
     @Override
     public void helpUser(Scanner consoleScanner) {
         System.out.println("Here you can enter the classification of different meteorites.");

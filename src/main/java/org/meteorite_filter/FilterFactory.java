@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * Die FilterFactory-Klasse erstellt und konfiguriert Filterobjekte basierend auf den verfügbaren Filtern.
+ */
 public class FilterFactory {
 
     private static Map<String, Class<? extends Filter>> filterRegistry;

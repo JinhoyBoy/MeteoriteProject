@@ -24,13 +24,16 @@ public class RegionFilterTest {
     public void setUp() {
         // Setzt den RegionFilter mit einem Beispielwert
         executeFilter = new RegionFilter(50.0, 10.0, 2.0);
+        // Standard RegionFilter-Konstruktor
         configureFilter = new RegionFilter();
     }
 
-    // configure test
+    /**
+     * Testet die Konfiguration des Filters mit gültiger Eingabe.
+     */
     @Test
     void testValidInput() {
-        String input = "48.8566,2.3522,10.0\n"; // Paris coordinates with a 10 km radius
+        String input = "48.8566;2.3522;10.0\n"; // Paris Koordinaten mit einem Radius von 10 km
         InputStream in = new ByteArrayInputStream(input.getBytes());
         Scanner scanner = new Scanner(in);
         configureFilter.configure(scanner);
@@ -40,13 +43,16 @@ public class RegionFilterTest {
         assertEquals(10.0, configureFilter.getRadius());
     }
 
+    /**
+     * Testet die Konfiguration des Filters mit einer Hilfseingabe gefolgt von gültiger Eingabe.
+     */
     @Test
     void testHelpInput() {
-        String input = "h\n48.8566,2.3522,10.0\n"; // Help input followed by valid input
+        String input = "h\n48.8566;2.3522;10.0\n"; // Hilfseingabe gefolgt von gültiger Eingabe
         InputStream in = new ByteArrayInputStream(input.getBytes());
         Scanner scanner = new Scanner(in);
 
-        // Redirecting System.out to check help message
+        // Umleiten von System.out, um die Hilfemeldung zu überprüfen
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
@@ -60,29 +66,35 @@ public class RegionFilterTest {
         assertEquals(10.0, configureFilter.getRadius());
     }
 
+    /**
+     * Testet die Konfiguration des Filters mit ungültigem Eingabeformat.
+     */
     @Test
     void testInvalidInputFormat() {
-        String input = "48.8566,2.3522\n"; // Missing radius
+        String input = "48.8566;2.3522\n"; // Fehlender Radius
         InputStream in = new ByteArrayInputStream(input.getBytes());
         Scanner scanner = new Scanner(in);
 
-        // Redirecting System.out to check invalid input message
+        // Umleiten von System.out, um die Fehlermeldung für ungültige Eingabe zu überprüfen
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
         configureFilter.configure(scanner);
 
-        String expectedMessage = "Invalid input format for Region filter. Expected input is (latitude,longitude,radius).";
+        String expectedMessage = "Invalid input format for Region filter. Expected input is (latitude; longitude; radius).";
         assertTrue(outContent.toString().contains(expectedMessage));
     }
 
+    /**
+     * Testet die Konfiguration des Filters mit ungültigem Zahleneingabeformat.
+     */
     @Test
     void testNumberFormatException() {
-        String input = "invalid,2.3522,10.0\n"; // Invalid latitude
+        String input = "invalid;2.3522;10.0\n"; // Ungültige Breite
         InputStream in = new ByteArrayInputStream(input.getBytes());
         Scanner scanner = new Scanner(in);
 
-        // Redirecting System.out to check invalid type message
+        // Umleiten von System.out, um die Fehlermeldung für ungültigen Typ zu überprüfen
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
@@ -92,17 +104,20 @@ public class RegionFilterTest {
         assertTrue(outContent.toString().contains(expectedMessage));
     }
 
+    /**
+     * Testet die Konfiguration des Filters bei unerwarteter Ausnahme.
+     */
     @Test
     void testUnexpectedException() {
-        // Creating a Scanner that will cause an unexpected exception
+        // Erstellen eines Scanners, der eine unerwartete Ausnahme auslöst
         Scanner scanner = new Scanner(new InputStream() {
             @Override
             public int read() throws IOException {
-                throw new IOException("Simulated IO exception");
+                throw new IOException("Simulierte IO-Ausnahme");
             }
         });
 
-        // Redirecting System.out to check unexpected error message
+        // Umleiten von System.out, um die Fehlermeldung für unerwartete Fehler zu überprüfen
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
@@ -112,7 +127,8 @@ public class RegionFilterTest {
         assertTrue(outContent.toString().contains(expectedMessage));
     }
 
-    // execute test
+    // Ab hier Test der Ausführung des Filters
+
     /**
      * Testet den RegionFilter, wenn die Meteoriten innerhalb des Radius liegen.
      */
@@ -133,8 +149,8 @@ public class RegionFilterTest {
     @Test
     public void testRegionFilterOnBorder() {
         List<Meteorite> input = List.of(
-                new Meteorite("Test3", 50.0, 10.02798),  // das ist an der Kante
-                new Meteorite("Test4", 48.0, 8.0)    // außerhalb der Kante
+                new Meteorite("Test3", 50.0, 10.02798),  // Das ist an der Kante
+                new Meteorite("Test4", 48.0, 8.0)    // Außerhalb der Kante
         );
         List<Meteorite> output = executeFilter.execute(input);
         assertEquals("Test3", output.get(0).getName()); // Die Kante wird noch mitgezählt
@@ -163,5 +179,3 @@ public class RegionFilterTest {
         assertEquals(0, output.size());
     }
 }
-
-
