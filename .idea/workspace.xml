@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="MeteoriteProject:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Kommentare und Semikolon">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Meteorite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/meteorite_filter/Meteorite.java" afterDir="false" />
+    <list default="true" id="4ed68788-1bb9-488f-b5da-538f4b876283" name="Changes" comment="Kommentare small">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MeteoriteProject_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,34 +55,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MeteoriteAnalysis.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Sequence&quot;,
-    &quot;JUnit.PipelineIntegrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RegionFilterTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.MeteoriteProject [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.MeteoriteProject [exec:java...].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jinhoan/IdeaProjects/MeteoriteProject/target&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/jinhoan/IdeaProjects/MeteoriteProject/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.145977&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.MeteoriteAnalysis.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "JUnit.PipelineIntegrationTest.executor": "Run",
+    "JUnit.RegionFilterTest.executor": "Run",
+    "Maven.MeteoriteProject [compile].executor": "Run",
+    "Maven.MeteoriteProject [exec:java...].executor": "Run",
+    "Maven.MeteoriteProject [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/jinhoan/Downloads/3084111_ 3258299_9415151/MeteoriteProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/jinhoan/IdeaProjects/MeteoriteProject/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.145977",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/target" />
@@ -99,6 +107,7 @@
       <command value="mvn exec:java -Dexec.mainClass=&quot;org.example.MeteoriteAnalysis&quot;" />
       <command value="mvn exec:java -Dexec.mainClass=&quot;MeteoriteAnalysis&quot;" />
       <command value="mvn compile" />
+      <command value="mvn install" />
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -158,7 +167,11 @@
       <workItem from="1718001996101" duration="7271000" />
       <workItem from="1718034200793" duration="6670000" />
       <workItem from="1718132646588" duration="2491000" />
-      <workItem from="1718135769065" duration="7765000" />
+      <workItem from="1718135769065" duration="15528000" />
+      <workItem from="1718228871145" duration="8000" />
+      <workItem from="1718255720653" duration="275000" />
+      <workItem from="1718257110266" duration="1242000" />
+      <workItem from="1718274910600" duration="585000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -368,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718196809793</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Kommentare small">
+      <option name="closed" value="true" />
+      <created>1718197261500</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1718197261500</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +415,8 @@
     <MESSAGE value="White Box Test" />
     <MESSAGE value="Rename Package" />
     <MESSAGE value="Kommentare und Semikolon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Kommentare und Semikolon" />
+    <MESSAGE value="Kommentare small" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kommentare small" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
