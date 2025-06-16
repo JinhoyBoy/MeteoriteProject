@@ -13,7 +13,7 @@ To run the program, you need a Java environment or IDE (e.g., IntelliJ, Eclipse)
 3. After selecting the filters, you will be prompted to enter the required parameters for each filter. You can enter "h" each time for help with the input.
 4. After configuration and filter execution, the filtered meteorite data will be written to the output file (`src/main/resources/output.json`).
 
-## Adding a Filter Module
+## Adding a custom Filter Module
 
 To add a new filter module to your meteorite data processing program, follow these steps:
 
