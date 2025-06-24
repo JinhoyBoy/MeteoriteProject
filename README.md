@@ -6,7 +6,7 @@ The available evaluation modules and their configuration are to be defined via a
 
 ## Usage Instructions
 
-To run the program, you need a Java environment or IDE (e.g., IntelliJ, Eclipse). Ensure that the main class is executed.
+To run the program, you need a Java environment or IDE (e.g., IntelliJ, Eclipse). Ensure that the main class is executed:
 
 1. After starting the program, you will be prompted to select the filters to apply to the meteorite data. The available filters will be displayed.
 2. Enter the desired filters separated by semicolons (`;`). If there are any incorrect inputs, the errors will be detected, and an appropriate error message will be generated.
